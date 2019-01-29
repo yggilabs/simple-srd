@@ -36,7 +36,7 @@ test content shamelessly used without permission from the Gold ENnie award winni
 
 Is how the first section of this file is written using Markdown.
 
-Your actual website will be made of preset pages. These might include your homepage, a contact form and perhaps an about page. Initially you begin with just a home page called index.md
+Your actual website will have some preset pages. These might include your homepage, a contact form and perhaps an about page. Initially you begin with just a home page called index.md
 
 [file](https://github.com/non-binary-trees/simple-srd/blob/master/index.md)
 
@@ -52,7 +52,7 @@ This file has two parts. The top section between the two '---' is YAML just like
 
 You can edit this using markdown to create a home page with whatever information you want visitors to see when they first visit your page.
 
-The next step is actually adding some rules to your webpage. There are two types of rules pages. First is a rules section, this groups related sections of rules together under a heading in your navigation menu. Our section sample is called [the-basics.md](https://github.com/non-binary-trees/simple-srd/blob/master/_rules/the-basics.md)
+The other page on your website will be rules. There are two types of rules pages. First is a rules section, this groups related sections of rules together under a heading in your navigation menu. Our section sample is called [the-basics.md](https://github.com/non-binary-trees/simple-srd/blob/master/_rules/the-basics.md)
 
 ```Markdown
 ---
