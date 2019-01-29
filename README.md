@@ -146,3 +146,9 @@ This is very similar to the last file with one notable exception. We defined a c
 If you are familiar with CSS you may want to check out the [custom css](https://github.com/non-binary-trees/simple-srd/blob/master/_sass/_custome.scss) file to modify the theme to your liking.
 
 That should be enough to get you started on making your very own SRD document for the web.
+
+## Attribution
+
+I have used text from the blades in the dark website because it is a great example of this kind of site. I hope this project allows those less inclined to this kind of work to be able to publish their game without technology getting in the way. And heres the legal stuff...
+
+This work is based on Blades in the Dark (found at http://www.bladesinthedark.com/), product of One Seven Design, developed and authored by John Harper, and licensed for our use under the Creative Commons Attribution 3.0 Unported license (http://creativecommons.org/licenses/by/3.0/).
