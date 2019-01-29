@@ -96,7 +96,7 @@
         {% for category in categories %}
         {{ category | inspect }}
         
-        {% assign index = site.rules | where_exp:"item","category.name | slugify == item.name | remove: '.md' | remove: '.html'" %}
+        {% assign index = site.rules | where_exp:"item","category.name == item.name | remove: '.md' | remove: '.html'" %}
         {% if index %}
         <li>
           <details>
