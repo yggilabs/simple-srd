@@ -97,9 +97,11 @@
           <details>
             <summary><a href="{{ index.url }}">{{ index.title }}</a></summary>
               <ul>
+              {% comment %}
               {% for rule in category %}
                 <li><a href="{{ rule.url }}">{{ rule.title }}</a></li>
               {% endfor %}
+              {% endcomment %}
               </ul>
           </details>
         </li>
