@@ -7,79 +7,17 @@
     <link rel="canonical" href="{{ github.site.url }}.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-custom>
-      :root {
-        --site_grid-template-rows: 1fr;
-        --site_grid-template-columns: 400px 1fr;
-        --site_grid-template-areas: 
-          "nav main";
-                    
-        --nav_grid-template-rows: auto auto auto 1fr;
-        --nav_grid-template-columns: 1fr;
-        --nav_grid-template-areas: 
-          "title"
-          "rules"
-          "links";
-                    
-        --main_grid-template-rows: auto auto;
-        --main_grid-template-columns: 1fr;
-        --main_grid-template-areas: 
-          "title"
-          "content";
-      }
-      
-      .site {
-        display: grid;
-        grid-template-rows: var(--site_grid-template-rows);
-        grid-template-columns: var(--site_grid-template-columns);
-        grid-template-areas: var(--site_grid-template-areas);
-      }
-      
-      .site__nav {
-        grid-area: nav; 
-      }
-      
-      .site__main {
-        grid-area: main; 
-      }
-      
-      .nav {
-        display: grid;
-        grid-template-rows: var(--nav_grid-template-rows);
-        grid-template-columns: var(--nav_grid-template-columns);
-        grid-template-areas: var(--nav_grid-template-areas); 
-      }
-      
-      .nav__title {
-        grid-area: title; 
-      }      
-      
-      .nav__rules {
-        grid-area: rules; 
-      }      
-      
-      .nav__links {
-        grid-area: links; 
-      }
-      
-      .main {
-        display: grid;
-        grid-template-rows: var(--main_grid-template-rows);
-        grid-template-columns: var(--main_grid-template-columns);
-        grid-template-areas: var(--main_grid-template-areas); 
-      }
-      
-      .main__title {
-        grid-area: title; 
-      }
-            
-      .main__content {
-        grid-area: content; 
-      }
+      {% capture include_to_scssify %}
+        {% include styles/normalize.css %}
+        {% include styles/github-markdown.css %}
+        {% include styles/styles.scss %}
+      {% endcapture %}
+      {{ include_to_scssify | scssify }}
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
-  <body class="site">
+  <body class="site markdown-body">
     <nav class="site__nav nav">
       <header class="nav__title"><h1><a href="{{ site.github.url }}">{{ site.title }}</a></h1></header>
       <ul class="nav__rules">        
