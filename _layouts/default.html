@@ -88,7 +88,7 @@
         {% unless category.name == '' %}
         {{ category.name }}
         {% for rule in site.rules %}
-          {{ rule.name }}
+          {{ rule | inspect }}
         {% endfor %}
         {% assign index = site.rules | where_exp:"item","category.name == item.name" %}
         {% endunless %}
