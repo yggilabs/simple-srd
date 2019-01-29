@@ -102,10 +102,9 @@
           <details>
             <summary><a href="{{ index.url }}">{{ index.title }}</a></summary>
               <ul>
-              {% for rule in category %}
+              {% for rule in category.items %}
                 <li><a href="{{ rule.url }}">{{ rule.title }}</a></li>
               {% endfor %}
-
               </ul>
           </details>
         </li>        
