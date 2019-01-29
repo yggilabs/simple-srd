@@ -5,6 +5,7 @@
   --site__footer_border-top-style: solid;
   --site__footer_padding-top: 24px;
   --site__footer_margin: 0 128px 128px 64px;
+  --site__footer_text-align: right;
   /* emojis are 🔥 */
   --nav__a--active__after: '🔥'; /* idk whats up with these variable names either */
   --details--open__after_content: '🌝'; /* change them */
@@ -22,6 +23,8 @@
     --site__nav_padding: 0;
     --site__main_margin: 0;
     --site__main_padding: 0;
+    --site__footer_margin: 0 0 128px 0;
+    --site__footer_text-align: center;
   }
 }
 
@@ -48,7 +51,7 @@
   border-top-style: var(--site__footer_border-top-style);
   padding-top: var(--site__footer_padding-top);
   grid-area: footer;
-  text-align: right;
+  text-align: var(--site__footer_text-align);
   margin: var(--site__footer_margin);
 }
 
