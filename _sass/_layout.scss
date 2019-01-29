@@ -18,6 +18,29 @@
     "content";
 }
 
+@media (max-width: 1024px) {
+  :root {
+    --site_grid-template-rows: auto auto;
+    --site_grid-template-columns: 1fr;
+    --site_grid-template-areas: 
+      "nav"
+      "main";
+
+    --nav_grid-template-rows: auto auto auto;
+    --nav_grid-template-columns: 1fr;
+    --nav_grid-template-areas: 
+      "title"
+      "rules"
+      "links";
+
+    --main_grid-template-rows: auto auto;
+    --main_grid-template-columns: 1fr;
+    --main_grid-template-areas: 
+      "title"
+      "content";
+  }
+}
+
 .site {
   display: grid;
   grid-template-rows: var(--site_grid-template-rows);
