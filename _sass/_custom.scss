@@ -30,6 +30,8 @@ a.active::after {
   content: '🔥'; /* emojis are 🔥 */
 }
 
+/* customize the open and closed styles for the nav menu */
+
 details > summary::-webkit-details-marker {
   display: none;
 }
