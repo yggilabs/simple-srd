@@ -29,3 +29,15 @@
 a.active::after {
   content: '🔥'; /* emojis are 🔥 */
 }
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] > summary::after {
+  content: '🌝';
+}
+
+details:not([open]) > summary::after {
+  content: '🌚';
+}
