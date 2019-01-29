@@ -1,4 +1,6 @@
+---
+---
 - label: blades in the dark
   url: https://bladesinthedark.com
 - label: internal link
-  url: index
+  url: {{ site.github.url }}/index 
