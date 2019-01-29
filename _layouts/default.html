@@ -93,11 +93,10 @@
         
         {% assign categories = site.rules | group_by: "category" %}
         
-        {% for category in categories %}
-        {{ category | inspect }}
+        {% for category in categories %}        
         
         {% assign index = site.rules | where_exp:"item","category.name == item.name" %}
-        
+        {{ index | inspect }}
         {% if index %}
         <li>
           <details>
