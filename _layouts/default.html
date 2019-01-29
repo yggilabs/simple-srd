@@ -87,9 +87,14 @@
         {% for category in categories %}        
         {% unless category.name == '' %}
         {% assign relative_path = category.name | prepend:"_rules/" %}
+        {{ relative_path }}
+        {% for rule in site.rules %}
+          {{ rule.relative_path }}
+        {% endrule %}
         {% assign index = site.rules | where_exp:"item","relative_path == item.relative_path" %}
         {% endunless %}
         {% if index %}
+        {{ index | inspect }}
         <li>
           <details>
             <summary><a href="{{ site.github.url }}{{ index.url }}">{{ index.title }}</a></summary>
