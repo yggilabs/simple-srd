@@ -1,6 +1,6 @@
 ---
 title: Home
 ---
-{% for rule in site.rules %}
-  {{ rule | jsonify }}
-{% endfor %}
+
+{% assign rules_urls = site.rules | map: "url" %}
+{{ rules_urls | jsonify }}
