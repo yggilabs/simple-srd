@@ -34,10 +34,18 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-details[open] > summary::after {
+details > summary > h2 {
+  position: relative;
+}
+
+details > summary > h2::after {
+  position: absolute;
+  right: 0;
+}
+details[open] > summary > h2::after {
   content: '🌝';
 }
 
-details:not([open]) > summary::after {
+details:not([open]) > summary > ::after {
   content: '🌚';
 }
