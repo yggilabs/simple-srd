@@ -1,4 +1,19 @@
-footer {
+:root {
+  --site_padding: 0;  
+}
+
+@media (max-width: 1024px) {
+  /* using media queries to modified paramterized classes is the cool way to write css ❄❄❄ */
+  :root {
+    --site_padding: 0 8px;
+  }
+}
+
+.site {
+  padding: var(--site_padding)
+}
+
+.site__footer {
   border-top: 1px solid #eaecef;
   padding-top: 24px;
 }
