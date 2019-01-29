@@ -1,7 +1,7 @@
 /* ignore me being preachy about css */
 :root {
   --site_padding: 0;  /* "_" isnt really used in my naming scheme so I use it to show a css attribute relationship */  
-  --site__footer_border-top: 1px solid #eaecef;
+  --site__footer_border-top: 1px solid;
   --site__footer_padding-top: 24px;
   /* emojis are 🔥 */
   --nav__a--active__after: '🔥'; /* idk whats up with these variable names either */
@@ -34,7 +34,7 @@
   color: var(--color__foreground);
 }
 
-.site h1, .site h2, .site h3 {
+.site h1, .site h2, .site h3, .site .site__footer {
   border-color: var(--color__lowlight);
 }
 
