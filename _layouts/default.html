@@ -87,29 +87,7 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body class="site">
-    <nav class="site__nav nav">
-      <header class="nav__title"><h1>{{ site.title }}</h1></header>
-      <ul class="nav__rules">
-        
-        {% assign categories = site.rules | group_by: "category" %}
-        {% for category in categories %}
-        {% assign index = site.rules | where_exp:"item","category.name == item.name | remove: '.md' | remove: '.html'" %}
-        <li>
-          <details>
-            <summary><a href="{{ index.url }}">{{ index.title }}</a></summary>
-              <ul>
-              {% for rule in category %}
-                <li><a href="{{ rule.url }}">{{ rule.title }}</a></li>
-              {% endfor %}
 
-              </ul>
-          </details>
-        </li>
-        {% endfor %}
-        
-      </ul>
-
-    </nav>
     <main class="site__main main">
       <header class="main__title"><h1>{{ page.title }}</h1></header>
       <article class="main__content">
