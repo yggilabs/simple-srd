@@ -25,25 +25,30 @@
   padding: var(--site_padding);
 }
 
-.site * {  
-  background-color: var(--color__background);
-  color: var(--color__foreground);
-}
-
 .site a {
   color: var(--color__highlight);
 }
 
 /* does this work? 😮 */
-.site .invert {
-  --color__temp: var(--color__background);
-  --color__background: var(--color__foreground);
-  --color__foreground: var(--color__temp);  
-  --color__temp: var(--color__highlight);
-  --color__highlight: var(--color__lowlight);
-  --color__lowlight: var(--color__temp);  
+.site * {  
+  background-color: var(--color__background);
+  color: var(--color__foreground);
 }
 
+.site .invert {
+  --color__temp: var(--color__background);
+  --color__temp: var(--color__highlight);
+}
+
+.site .invert {
+  --color__background: var(--color__foreground);
+  --color__highlight: var(--color__lowlight);
+}
+
+.site .invert {
+  --color__foreground: var(--color__temp);  
+  --color__lowlight: var(--color__temp);  
+}
 
 /* BEM is cool but there are other cool things out there too I guess */
 .site .site__footer {  
