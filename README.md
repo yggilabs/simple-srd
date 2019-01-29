@@ -6,9 +6,11 @@ test content shamelessly used without permission from the Gold ENnie award winni
 
 ## Setup
 
-1. Fork this repository by clicking the fork button ![fork](https://github-images.s3.amazonaws.com/help/bootcamp/Bootcamp-Fork.png)
-2. Naviagte to your settings tab ![settings](https://guides.github.com/features/pages/repo-settings.png)
-3. Set your GitHub pages source to  "master branch" ![settings](https://guides.github.com/features/pages/launch-theme-chooser.png)
+> You may want to clone this tab to keep these instructions open while you follow along.
+
+1. Fork this repository by clicking the fork button in the top right corner. ![fork](https://github-images.s3.amazonaws.com/help/bootcamp/Bootcamp-Fork.png)
+2. When your new repo opens, naviagte to your settings tab. ![settings](https://guides.github.com/features/pages/repo-settings.png)
+3. Scroll down your settings page and set your GitHub pages source to  "master branch" ![settings](https://guides.github.com/features/pages/launch-theme-chooser.png)
 4. Your site will be reachble from the link indicated in the "This site is ready to be published at..." line
 
 ## Usage
