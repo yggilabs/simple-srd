@@ -85,16 +85,16 @@
       <ul class="nav__rules">        
         {% assign categories = site.rules | group_by: "category" %}        
         {% for category in categories %}        
-        {% unless category.name == '' %}
-        {% assign relative_path = category.name | prepend:"_rules/" %}
-        {{ relative_path }}
-        {% for rule in site.rules %}
-          {{ rule.relative_path }}
-        {% endfor %}
-        {% assign index = site.rules | where:"relative_path","relative_path" %}
-        {% endunless %}
-        {% if index %}
-        {{ index | inspect }}
+          {% unless category.name == '' %}
+            {% assign relative_path = category.name | prepend:"_rules/" %}
+            {% for rule in site.rules %}
+              {% if relative_path == rule.relative_path %}
+                {% assign index = rule %}
+              {% endif%}
+            {% endfor %}
+          {% endunless %}
+          {% if index != '' %}
+        
         <li>
           <details>
             <summary><a href="{{ site.github.url }}{{ index.url }}">{{ index.title }}</a></summary>
