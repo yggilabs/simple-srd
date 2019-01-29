@@ -86,11 +86,7 @@
         {% assign categories = site.rules | group_by: "category" %}        
         {% for category in categories %}        
         {% unless category.name == '' %}
-        {{ category.name }}
-        {% for rule in site.rules %}
-          {{ rule | inspect }}
-        {% endfor %}
-        {% assign index = site.rules | where_exp:"item","category.name == item.name" %}
+        {% assign index = site.rules | where_exp:"item","category.name == item.relative_path | prepend: "_rules/" %}
         {% endunless %}
         {{ index | inspect }}
         {% if index %}
