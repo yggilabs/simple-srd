@@ -61,5 +61,5 @@ details[open] > summary > ::after {
 }
 
 details:not([open]) > summary > ::after {
-  content: var(--details--open__after_content);
+  content: var(--details--closed__after_content);
 }
