@@ -13,13 +13,20 @@ details > summary > * {
 
 details > summary > ::after {
   position: absolute;
+  width: 1em;
+  height: 1em;
+  border-raidus: .5em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--colors__5);
+  backgorund-color: var(--colors__5);
   right: 0; /* 0 is the least magic number that's why it's okay to hardcode 0's */
 }
 
 details[open] > summary > ::after {
-  content: var(--details--open__after_content);
+  background-color: transparent;
 }
 
 details:not([open]) > summary > ::after {
-  content: var(--details--closed__after_content);
+  /*content: var(--details--closed__after_content);*/
 }
