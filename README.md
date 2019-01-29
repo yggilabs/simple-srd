@@ -2,8 +2,6 @@
 
 An easy to use template for quickly creating SRD style documents and webpages. Minimum styling for customizable theming.
 
-test content shamelessly used without permission from the Gold ENnie award winning website [bladesinthedark.com](https://bladesinthedark.com/)
-
 ## Setup
 
 > You may want to clone this tab to keep these instructions open while you follow along.
@@ -158,8 +156,10 @@ That should be enough to get you started on making your very own SRD document fo
 
 ## Attribution
 
-I have used text from the blades in the dark website because it is a great example of this kind of site. I hope this project allows those less inclined to this kind of work to be able to publish their game without technology getting in the way. And heres the legal stuff...
+I have used text from the Gold ENnie award winning website [bladesinthedark.com](https://bladesinthedark.com/) because it is a great example of how to make an SRD. I hope this project allows people publish their games without technology getting in the way. 
+
+And heres the legal stuff...
 
 This work is based on Blades in the Dark (found at http://www.bladesinthedark.com/), product of One Seven Design, developed and authored by John Harper, and licensed for our use under the Creative Commons Attribution 3.0 Unported license (http://creativecommons.org/licenses/by/3.0/).
 
-The images in the setup section are all from various official GitHub guides.
+The images in the setup section are from official GitHub guides. [forking](https://guides.github.com/activities/forking/) [pages](https://guides.github.com/features/pages/)
