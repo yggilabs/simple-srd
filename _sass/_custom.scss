@@ -79,6 +79,17 @@
   text-align: center; 
 }
 
+.site strong {
+  color: var(--colors__5,--colors__lowlight);
+}
+
+.site em {
+  color: var(--colors__6,--colors__5,--colors__lowlight);
+}
+
+.site strong > em {
+  color: var(--colors__7,--colors__5,--colors__lowlight);
+}
 
 /* 🌈⛅ */
 @import "colors";
