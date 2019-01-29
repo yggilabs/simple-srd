@@ -1,7 +1,8 @@
 /* ignore me being preachy about css */
 :root {
   --site_padding: 0;  /* "_" isnt really used in my naming scheme so I use it to show a css attribute relationship */  
-  --site__footer_border-top: 1px solid;
+  --site__footer_border-top-width: 1px;
+  --site__footer_border-top-style: solid;
   --site__footer_padding-top: 24px;
   /* emojis are 🔥 */
   --nav__a--active__after: '🔥'; /* idk whats up with these variable names either */
@@ -40,7 +41,8 @@
 
 /* BEM is cool but there are other cool things out there too I guess */
 .site .site__footer {  
-  border-top: var(--site__footer_border-top); /* why use magic numbers here? I can write them somewhere else like the top of this file */
+  border-top-width: var(--site__footer_border-top-width); /* why use magic numbers here? I can write them somewhere else like the top of this file */
+  border-top-style: var(--site__footer_border-top-style);
   padding-top: var(--site__footer_padding-top);
 }
 
