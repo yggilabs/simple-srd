@@ -1,6 +1,6 @@
 /* customize the open and closed styles for the nav menu */
 details > summary {
- outline: none; 
+  outline: none; 
 }
 
 details > summary::-webkit-details-marker {
@@ -12,6 +12,7 @@ details > summary > * {
 }
 
 details > summary > ::after {
+  content: '';
   position: absolute;
   width: 1em;
   height: 1em;
