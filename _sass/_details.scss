@@ -11,19 +11,9 @@ details > summary > * {
   position: relative;
 }
 
-details > summary > ::after {
-  content: '';
+details > summary > ::after {  
   display: block;
   position: absolute;
-  width: .5em;
-  height: .5em;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 1em;
-  border-width: 2px;
-  border-style: solid;
-  border-color: var(--color__foreground);
-  background-color: var(--color__foreground);
   right: 0; /* 0 is the least magic number that's why it's okay to hardcode 0's */
 }
 
