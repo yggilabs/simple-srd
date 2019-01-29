@@ -96,7 +96,7 @@
         {% for category in categories %}
         {{ category | inspect }}
         {% comment %}
-        {% assign index = site.rules | where_exp:"item","category.name == item.name | remove: '.md' | remove: '.html'" %}
+        {% assign index = site.rules | where_exp:"item","category.name | slugify == item.name | remove: '.md' | remove: '.html'" %}
         <li>
           <details>
             <summary><a href="{{ index.url }}">{{ index.title }}</a></summary>
