@@ -6,7 +6,7 @@ An easy to use template for quickly creating SRD style documents and webpages. M
 
 > You may want to clone this tab to keep these instructions open while you follow along.
 
-1. Fork this repository by clicking the fork button in the top right corner. ![fork](https://github-images.s3.amazonaws.com/help/bootcamp/Bootcamp-Fork.png)
+1. Fork this repository by clicking the fork button in the upper right. ![fork](https://github-images.s3.amazonaws.com/help/bootcamp/Bootcamp-Fork.png)
 2. When your new repo opens, naviagte to your settings tab. ![settings](https://guides.github.com/features/pages/repo-settings.png)
 3. Scroll down your settings page and set your GitHub pages source to  "master branch" ![settings](https://guides.github.com/features/pages/launch-theme-chooser.png)
 4. Your site will be reachble from the link indicated in the "Your site is ready to be published at..." line
