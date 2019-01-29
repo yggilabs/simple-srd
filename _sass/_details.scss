@@ -11,13 +11,12 @@ details > summary > * {
   position: relative;
 }
 
-details > summary > ::after {  
-  display: block;
-  position: absolute;
-  right: 0; /* 0 is the least magic number that's why it's okay to hardcode 0's */
+details > summary > ::before {  
+  content: '^';
+  display: inline-block;  
 }
 
-details[open] > summary > ::after {
-  background-color: transparent;
+details:not([open]) > summary > ::after {
+  transform: rotate(180deg);
 }
 
