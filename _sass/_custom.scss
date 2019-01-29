@@ -21,7 +21,7 @@
 }
 
 /* BEM is cool but there are other cool things out there too I guess */
-.site__footer {  
+.site .site__footer {  
   border-top: var(--site__footer_border-top); /* why use magic numbers here? I can write them somewhere else like the top of this file */
   padding-top: var(--site__footer_padding-top);
 }
@@ -30,12 +30,12 @@
   list-style: none;
 }
 
-.nav .nav__title {
-  text-align: center; 
-}
-
 .nav a.active::after {
   content: var(--nav__a--active__after);
+}
+
+.nav .nav__title {
+  text-align: center; 
 }
 
 /* customize the open and closed styles for the nav menu */
