@@ -13,6 +13,7 @@ details > summary > * {
 
 details > summary > ::after {
   content: '';
+  display: block;
   position: absolute;
   width: 1em;
   height: 1em;
