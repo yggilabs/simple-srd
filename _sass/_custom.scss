@@ -8,11 +8,6 @@
   --nav__a--active__after: '🔥'; /* idk whats up with these variable names either */
   --details--open__after_content: '🌝'; /* change them */
   --details--closed__after_content: '🌚'; /* or don't, Im probably not your mom */
-  /* 🌈 colors 🌈 */
-  --color__background: var(--color__1, #24292e);
-  --color__foreground: var(--color__2, #fff);
-  --color__highlight: var(--color__3, #0366d6);
-  --color__lowlight: var(--color__4, #eaecef);
 }
 
 @media (max-width: 1024px) {
@@ -83,3 +78,6 @@ details[open] > summary > ::after {
 details:not([open]) > summary > ::after {
   content: var(--details--closed__after_content);
 }
+
+/* 🌈⛅ */
+@import "colors";
