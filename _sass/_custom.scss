@@ -7,11 +7,12 @@
   --site__footer_margin: 0 128px 128px 64px;
   --site__footer_text-align: right;
   /* emojis are 🔥 */
-  --nav__a--active__after: '🔥'; /* idk whats up with these variable names either */
-  
+  --a--active__after_content: '!'; /*'🔥'; /* idk whats up with these variable names either */
+  --a--active__after_color: var(--color__lowlight);
   --site__nav_padding: 0 64px;
   --site__main_margin: 0 64px;
   --site__main_padding: 64px;
+  --main__h_color: var(--color__highlight);
 }
 
 @media (max-width: 1024px) {
@@ -72,11 +73,16 @@
 }
 
 .nav a.active::after {
-  content: var(--nav__a--active__after);
+  content: var(--a--active__after_content);
+  color: var(--a--active__after_color)
 }
 
 .nav .nav__title {
   text-align: center; 
+}
+
+.main h1, .main h2, .main h3 {
+  color: var(--main__h_color);
 }
 
 .site strong {
