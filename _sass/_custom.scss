@@ -36,15 +36,15 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-details > summary > h2 {
+details > summary > * {
   position: relative;
 }
 
-details > summary > h2::after {
+details > summary > ::after {
   position: absolute;
   right: 0;
 }
-details[open] > summary > h2::after {
+details[open] > summary > ::after {
   content: '🌝';
 }
 
