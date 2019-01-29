@@ -11,12 +11,12 @@ details > summary > * {
   position: relative;
 }
 
-details > summary > ::before {  
+details > summary > ::before, details > summary > ::after {  
   content: '^';
   display: inline-block;  
 }
 
-details:not([open]) > summary > ::before {
+details:not([open]) > summary > ::before, details:not([open]) > summary > ::after {
   transform: rotate(180deg);
 }
 
