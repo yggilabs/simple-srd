@@ -95,9 +95,11 @@
         
         {% for category in categories %}        
         {{ category | inspect }}
+        {% if category.name != '' %}
         {% assign index = site.rules | where_exp:"item","category.name == item.name" %}
+        {% endif %}
         {{ index | inspect }}
-        {% if index %}
+        {% if index != '' %}
         <li>
           <details>
             <summary><a href="{{ site.github.url }}{{ index.url }}">{{ index.title }}</a></summary>
