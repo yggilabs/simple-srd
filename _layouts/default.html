@@ -106,9 +106,9 @@
         {% endfor %}
       </ul>
       <ul class="nav__links">
-        {%- for link in site.links -%}
+        {% for link in site.links %}
         <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-        {%- endfor -%}
+        {% endfor %}
       </ul>
     </nav>
     <main class="site__main main">
