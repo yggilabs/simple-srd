@@ -150,7 +150,7 @@ The phases are a conceptual model to help you organize the game. They’re not m
 
 This is very similar to the last file with one notable exception. We defined a category variable in the YAML section. This has to match file name of the rules section this page belongs to.
 
-If you are familiar with CSS you may want to check out the [custom css](https://github.com/non-binary-trees/simple-srd/blob/master/_sass/_custome.scss) file to modify the theme to your liking.
+If you are familiar with CSS you may want to check out the [custom css](https://github.com/non-binary-trees/simple-srd/blob/master/_sass/_custom.scss) file to modify the theme to your liking.
 
 That should be enough to get you started on making your very own SRD document for the web.
 
