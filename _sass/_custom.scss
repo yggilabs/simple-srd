@@ -64,6 +64,11 @@
   padding: var(--site__main_padding);
 }
 
+.nav {
+  position: sticky;
+  top: 0;
+}
+
 .nav ul {
   list-style: none;
 }
