@@ -95,8 +95,9 @@
         
         {% for category in categories %}
         {{ category | inspect }}
-        
+        {% comment %}
         {% assign index = site.rules | where_exp:"item","category.name == item.name | remove: '.md' | remove: '.html'" %}
+        {% endcomment %}
         {% if index %}
         <li>
           <details>
