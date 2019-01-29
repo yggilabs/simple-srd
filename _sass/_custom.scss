@@ -70,31 +70,7 @@
   text-align: center; 
 }
 
-/* customize the open and closed styles for the nav menu */
-details > summary {
- outline: none; 
-}
-
-details > summary::-webkit-details-marker {
-  display: none;
-}
-
-details > summary > * {
-  position: relative;
-}
-
-details > summary > ::after {
-  position: absolute;
-  right: 0; /* 0 is the least magic number that's why it's okay to hardcode 0's */
-}
-
-details[open] > summary > ::after {
-  content: var(--details--open__after_content);
-}
-
-details:not([open]) > summary > ::after {
-  content: var(--details--closed__after_content);
-}
 
 /* 🌈⛅ */
 @import "colors";
+@import "details";
