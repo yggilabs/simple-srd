@@ -90,7 +90,7 @@
         {{ relative_path }}
         {% for rule in site.rules %}
           {{ rule.relative_path }}
-        {% endrule %}
+        {% endfor %}
         {% assign index = site.rules | where_exp:"item","relative_path == item.relative_path" %}
         {% endunless %}
         {% if index %}
