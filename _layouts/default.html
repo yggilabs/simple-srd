@@ -90,7 +90,20 @@
     <nav class="site__nav nav">
       <header class="nav__title"><h1>{{ site.title }}</h1></header>
       <ul class="nav__rules">
-        <li></li>
+        {% assign categories = site.rules | group_by: "category" %}
+        {% for category in categories %}
+        {% assign index = site.rules | where_exp:"item","category.name == item.name | remove: '.md' | remove: '.html'" }}
+        <li>
+          <details>
+            <summary><a href="{{ index.url }}">{{ index.title }}</a></summary>
+              <ul>
+              {% for rule in category %}
+                <li><a href="{{ rule.url }}">{{ rule.title }}</a></li>
+              {% endfor %}
+              </ul>
+          </details>
+        </li>
+        {% endfor %}
       </ul>
       <ul class="nav__links">
         {%- for link in site.links -%}
