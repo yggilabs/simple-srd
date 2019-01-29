@@ -1,5 +1,6 @@
 ---
 title: The Basics
+category: the basics
 ---
 
 ## System Reference Document Overview
