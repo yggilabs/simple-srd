@@ -87,7 +87,19 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body class="site">
+    <nav class="site__nav nav">
+      <header class="nav__title"><h1>{{ site.title }}</h1></header>
+      <ul class="nav__rules">
+        
 
+        
+      </ul>
+      <ul class="nav__links">
+        {% for link in site.links %}
+        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
     <main class="site__main main">
       <header class="main__title"><h1>{{ page.title }}</h1></header>
       <article class="main__content">
