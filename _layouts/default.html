@@ -86,8 +86,10 @@
         {% assign categories = site.rules | group_by: "category" %}        
         {% for category in categories %}        
         {% unless category.name == '' %}
-        {{ category.name | inspect }}
-        {{ site.rules | inspect }}
+        {{ category.name }}
+        {% for rule in site.rules %}
+          {{ rule.name }}
+        {% endfor %}
         {% assign index = site.rules | where_exp:"item","category.name == item.name" %}
         {% endunless %}
         {{ index | inspect }}
