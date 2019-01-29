@@ -92,6 +92,7 @@
       <ul class="nav__rules">
         
         {% assign categories = site.rules | group_by: "category" %}
+        {% comment %}
         {% for category in categories %}
         {% assign index = site.rules | where_exp:"item","category.name == item.name | remove: '.md' | remove: '.html'" %}
         <li>
@@ -106,7 +107,7 @@
           </details>
         </li>
         {% endfor %}
-        
+        {% endcomment %}
       </ul>
       <ul class="nav__links">
         {% for link in site.links %}
