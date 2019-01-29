@@ -14,6 +14,7 @@ details > summary > * {
 details > summary > ::before {  
   content: '^';
   display: inline-block;  
+  color: var(--color__lowlight);
 }
 
 details:not([open]) > summary > ::before {
