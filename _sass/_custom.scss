@@ -7,6 +7,11 @@
   --nav__a--active__after: '🔥'; /* idk whats up with these variable names either */
   --details--open__after_content: '🌝'; /* change them */
   --details--closed__after_content: '🌚'; /* or don't, Im probably not your mom */
+  /* colors */
+  --color__background: white;
+  --color__foreground: black;
+  --color__highlight: deeppink;
+  --color__lowlight: gray;
 }
 
 @media (max-width: 1024px) {
@@ -19,6 +24,26 @@
 .site {
   padding: var(--site_padding);
 }
+
+.site * {  
+  background-color: var(--color__background);
+  color: var(--color__foreground);
+}
+
+.site a {
+  color: var(--color__highlight);
+}
+
+/* does this work? 😮 */
+.site .invert {
+  --color__temp: var(--color__background);
+  --color__background: var(--color__foreground);
+  --color__foreground: var(--color__temp);  
+  --color__temp: var(--color__highlight);
+  --color__highlight: var(--color__lowlight);
+  --color__lowlight: var(--color__temp);  
+}
+
 
 /* BEM is cool but there are other cool things out there too I guess */
 .site .site__footer {  
