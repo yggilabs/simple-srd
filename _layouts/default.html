@@ -82,17 +82,16 @@
   <body class="site">
     <nav class="site__nav nav">
       <header class="nav__title"><h1><a href="{{ site.github.url }}">{{ site.title }}</a></h1></header>
-      <ul class="nav__rules">
-        
-        {% assign categories = site.rules | group_by: "category" %}
-        
+      <ul class="nav__rules">        
+        {% assign categories = site.rules | group_by: "category" %}        
         {% for category in categories %}        
-        {{ category | inspect }}
         {% unless category.name == '' %}
+        {{ category.name | inspect }}
+        {{ site.rules | inspect }}
         {% assign index = site.rules | where_exp:"item","category.name == item.name" %}
         {% endunless %}
         {{ index | inspect }}
-        {% if index != '' %}
+        {% if index %}
         <li>
           <details>
             <summary><a href="{{ site.github.url }}{{ index.url }}">{{ index.title }}</a></summary>
