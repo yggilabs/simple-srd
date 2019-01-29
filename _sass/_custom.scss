@@ -7,7 +7,7 @@
   --nav__a--active__after: '🔥'; /* idk whats up with these variable names either */
   --details--open__after_content: '🌝'; /* change them */
   --details--closed__after_content: '🌚'; /* or don't, Im probably not your mom */
-  /* colors */
+  /* 🌈 colors 🌈 */
   --color__background: var(--color__1, #24292e);
   --color__foreground: var(--color__2, #fff);
   --color__highlight: var(--color__3, #0366d6);
@@ -29,8 +29,7 @@
   color: var(--color__highlight);
 }
 
-/* does this work? 😮 */
-.site * {  
+.site, .site * {  
   background-color: var(--color__background);
   color: var(--color__foreground);
 }
