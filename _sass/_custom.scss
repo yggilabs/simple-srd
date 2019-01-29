@@ -46,6 +46,7 @@
   border-top-width: var(--site__footer_border-top-width); /* why use magic numbers here? I can write them somewhere else like the top of this file */
   border-top-style: var(--site__footer_border-top-style);
   padding-top: var(--site__footer_padding-top);
+  grid-aread: footer;
 }
 
 .site .site__nav {
