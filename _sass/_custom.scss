@@ -8,10 +8,14 @@
   --details--open__after_content: '🌝'; /* change them */
   --details--closed__after_content: '🌚'; /* or don't, Im probably not your mom */
   /* colors */
-  --color__background: white;
-  --color__foreground: black;
-  --color__highlight: deeppink;
-  --color__lowlight: gray;
+  --color__1: white;
+  --color__2: black;
+  --color__3: deeppink;
+  --color__4: gray;
+  --color__background: var(--color__1);
+  --color__foreground: var(--color__2);
+  --color__highlight: var(--color__3);
+  --color__lowlight: var(--color__4);
 }
 
 @media (max-width: 1024px) {
@@ -36,18 +40,10 @@
 }
 
 .site .invert {
-  --color__temp: var(--color__background);
-  --color__temp: var(--color__highlight);
-}
-
-.site .invert {
-  --color__background: var(--color__foreground);
-  --color__highlight: var(--color__lowlight);
-}
-
-.site .invert {
-  --color__foreground: var(--color__temp);  
-  --color__lowlight: var(--color__temp);  
+  --color__background: var(--color__2);
+  --color__foreground: var(--color__3);
+  --color__highlight: var(--color__4);
+  --color__lowlight: var(--color__1);
 }
 
 /* BEM is cool but there are other cool things out there too I guess */
