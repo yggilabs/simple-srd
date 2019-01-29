@@ -4,6 +4,13 @@ An easy to use template for quickly creating SRD style documents and webpages. M
 
 test content shamelessly used without permission from the Gold ENnie award winning website [bladesinthedark.com](https://bladesinthedark.com/)
 
+## Setup
+
+1. Fork this repository by clicking the fork button ![fork](https://github-images.s3.amazonaws.com/help/bootcamp/Bootcamp-Fork.png)
+2. Naviagte to your settings tab ![settings](https://guides.github.com/features/pages/repo-settings.png)
+3. Set your GitHub pages source to  "master branch" ![settings](https://guides.github.com/features/pages/launch-theme-chooser.png)
+4. Your site will be reachble from the link indicated in the "This site is ready to be published at..." line
+
 ## Usage
 
 Creating a great webpage doesn't require you to know any javascript, css or even html. The are only a couple types of files you will ever need to touch. The first type of file is called a YAML file with the .yml extension. It stores structured data in text format. 
