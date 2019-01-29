@@ -80,15 +80,15 @@
 }
 
 .site strong {
-  color: var(--colors__5,--colors__lowlight);
+  color: var(--color__5, --color__lowlight);
 }
 
 .site em {
-  color: var(--colors__6,--colors__5,--colors__lowlight);
+  color: var(--color__6, --color__5, --color__lowlight);
 }
 
 .site strong > em {
-  color: var(--colors__7,--colors__5,--colors__lowlight);
+  color: var(--color__7, --color__5, --color__lowlight);
 }
 
 /* 🌈⛅ */
