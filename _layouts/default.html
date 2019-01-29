@@ -94,16 +94,16 @@
         {% assign categories = site.rules | group_by: "category" %}
         
         {% for category in categories %}        
-        
+        {{ category | inspect }}
         {% assign index = site.rules | where_exp:"item","category.name == item.name" %}
         {{ index | inspect }}
         {% if index %}
         <li>
           <details>
-            <summary><a href="{{ index.url }}">{{ index.title }}</a></summary>
+            <summary><a href="{{ site.github.url }}{{ index.url }}">{{ index.title }}</a></summary>
               <ul>
               {% for rule in category.items %}
-                <li><a href="{{ rule.url }}">{{ rule.title }}</a></li>
+                <li><a href="{{ site.github.url }}{{ rule.url }}">{{ rule.title }}</a></li>
               {% endfor %}
               </ul>
           </details>
