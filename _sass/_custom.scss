@@ -8,12 +8,19 @@
   --nav__a--active__after: '🔥'; /* idk whats up with these variable names either */
   --details--open__after_content: '🌝'; /* change them */
   --details--closed__after_content: '🌚'; /* or don't, Im probably not your mom */
+  
+  --site__nav_padding: 0 64px;
+  --site__main_margin: 0 64px;
+  --site__main_padding: 0 64px 64px 64px;
 }
 
 @media (max-width: 1024px) {
   /* using media queries to modify paramterized classes is the cool way to write css ❄❄❄ */
   :root {
     --site_padding: 0 8px;
+    --site__nav_padding: 0;
+    --site__main_margin: 0;
+    --site__main_padding: 0;
   }
 }
 
@@ -39,6 +46,15 @@
   border-top-width: var(--site__footer_border-top-width); /* why use magic numbers here? I can write them somewhere else like the top of this file */
   border-top-style: var(--site__footer_border-top-style);
   padding-top: var(--site__footer_padding-top);
+}
+
+.site .site__nav {
+  padding: var(--site__nav_padding);
+}
+
+.site .site__main {
+  margin: var(--site__main_margin);
+  padding: var(--site__main_padding);
 }
 
 .nav ul {
