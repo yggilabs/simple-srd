@@ -3,6 +3,10 @@
   --site_padding: 0;  /* "_" isnt really used in my naming scheme so I use it to show a css attribute relationship */  
   --site__footer_border-top: 1px solid #eaecef;
   --site__footer_padding-top: 24px;
+  /* emojis are 🔥 */
+  --nav__a--active__after: '🔥'; /* idk whats up with these variable names either */
+  --details--open__after_content: '🌝'; /* change them */
+  --details--closed__after_content: '🌚'; /* or don't, Im probably not your mom */
 }
 
 @media (max-width: 1024px) {
@@ -26,8 +30,12 @@
   list-style: none;
 }
 
-a.active::after {
-  content: '🔥'; /* emojis are 🔥 */
+.nav .nav__title {
+  text-align: center; 
+}
+
+.nav a.active::after {
+  content: var(--nav__a--active__after);
 }
 
 /* customize the open and closed styles for the nav menu */
@@ -45,12 +53,13 @@ details > summary > * {
 
 details > summary > ::after {
   position: absolute;
-  right: 0;
+  right: 0; /* 0 is the least magic number that's why it's okay to hardcode 0's */
 }
+
 details[open] > summary > ::after {
-  content: '🌝';
+  content: var(--details--open__after_content);
 }
 
 details:not([open]) > summary > ::after {
-  content: '🌚';
+  content: var(--details--open__after_content);
 }
