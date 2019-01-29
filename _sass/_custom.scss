@@ -6,3 +6,7 @@ footer {
 .nav ul {
   list-style: none;
 }
+
+a.active::after {
+  content: '🔥';
+}
