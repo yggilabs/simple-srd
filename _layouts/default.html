@@ -90,7 +90,7 @@
         {{ category | inspect }}
         {% unless category.name == '' %}
         {% assign index = site.rules | where_exp:"item","category.name == item.name" %}
-        {% endif %}
+        {% endunless %}
         {{ index | inspect }}
         {% if index != '' %}
         <li>
