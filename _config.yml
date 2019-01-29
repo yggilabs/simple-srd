@@ -1,7 +1,6 @@
 collections:
   rules:
     output: true
-    
 defaults:
 -
     scope:
@@ -9,3 +8,4 @@ defaults:
       type: "rules"
     values:
       layout: "default"
+remote_theme: non-binary-trees/simple-srd-core
