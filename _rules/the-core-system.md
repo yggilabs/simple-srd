@@ -1,5 +1,6 @@
 ---
 title: The Core System
+category: the basics
 ---
 ## Judgment calls
 
