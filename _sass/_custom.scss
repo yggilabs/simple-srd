@@ -8,11 +8,16 @@
   --details--open__after_content: '🌝'; /* change them */
   --details--closed__after_content: '🌚'; /* or don't, Im probably not your mom */
   /* colors */
-  --color__1: #FBFBFB;
-  --color__2: #2b2c31;
-  --color__3: #A371FF;
-  --color__4: #FFA371;
-  --color__5: #71FFA3;  
+  {% assign list = site.data.colors %}
+  --color__1: {{ list.last }};
+  {% assign list = list | pop %}
+  --color__2: {{ list.last }};
+  {% assign list = list | pop %}  
+  --color__3: {{ list.last }};
+  {% assign list = list | pop %}
+  --color__4: {{ list.last }};
+  {% assign list = list | pop %}
+  --color__5: {{ list.last }};  
   --color__background: var(--color__1);
   --color__foreground: var(--color__2);
   --color__highlight: var(--color__3);
@@ -42,20 +47,6 @@
 
 .site h1, .site h2, .site h3 {
   border-color: var(--color__lowlight);
-}
-
-.site .rotate {
-  --color__background: var(--color__2);
-  --color__foreground: var(--color__3);
-  --color__highlight: var(--color__4);
-  --color__lowlight: var(--color__5);
-}
-
-.site .rotate .rotate {
-  --color__background: var(--color__3);
-  --color__foreground: var(--color__4);
-  --color__highlight: var(--color__5);
-  --color__lowlight: var(--color__1);
 }
 
 /* BEM is cool but there are other cool things out there too I guess */
