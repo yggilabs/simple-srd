@@ -8,16 +8,6 @@
   --details--open__after_content: '🌝'; /* change them */
   --details--closed__after_content: '🌚'; /* or don't, Im probably not your mom */
   /* colors */
-  {% assign list = site.data.colors %}
-  --color__1: {{ list.last }};
-  {% assign list = list | pop %}
-  --color__2: {{ list.last }};
-  {% assign list = list | pop %}  
-  --color__3: {{ list.last }};
-  {% assign list = list | pop %}
-  --color__4: {{ list.last }};
-  {% assign list = list | pop %}
-  --color__5: {{ list.last }};  
   --color__background: var(--color__1);
   --color__foreground: var(--color__2);
   --color__highlight: var(--color__3);
