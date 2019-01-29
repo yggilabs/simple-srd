@@ -13,7 +13,7 @@
         --site_grid-template-areas: 
           "nav main";
                     
-        --nav_grid-template-rows: auto auto auto;
+        --nav_grid-template-rows: auto auto auto 1fr;
         --nav_grid-template-columns: 1fr;
         --nav_grid-template-areas: 
           "title"
@@ -51,13 +51,11 @@
       
       .nav__title {
         grid-area: title; 
-      }
-      
+      }      
       
       .nav__rules {
         grid-area: rules; 
-      }
-      
+      }      
       
       .nav__links {
         grid-area: links; 
@@ -70,15 +68,10 @@
         grid-template-areas: var(--main_grid-template-areas); 
       }
       
-      .main {
-        margin: 0 16px;
-      }
-      
       .main__title {
         grid-area: title; 
       }
-      
-      
+            
       .main__content {
         grid-area: content; 
       }
