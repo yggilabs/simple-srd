@@ -4,6 +4,7 @@
   --site__footer_border-top-width: 1px;
   --site__footer_border-top-style: solid;
   --site__footer_padding-top: 24px;
+  --site__footer_margin: 0 128px 128px 64px;
   /* emojis are 🔥 */
   --nav__a--active__after: '🔥'; /* idk whats up with these variable names either */
   --details--open__after_content: '🌝'; /* change them */
@@ -11,7 +12,7 @@
   
   --site__nav_padding: 0 64px;
   --site__main_margin: 0 64px;
-  --site__main_padding: 0 64px 64px 64px;
+  --site__main_padding: 64px;
 }
 
 @media (max-width: 1024px) {
@@ -46,7 +47,9 @@
   border-top-width: var(--site__footer_border-top-width); /* why use magic numbers here? I can write them somewhere else like the top of this file */
   border-top-style: var(--site__footer_border-top-style);
   padding-top: var(--site__footer_padding-top);
-  grid-aread: footer;
+  grid-area: footer;
+  text-align: right;
+  margin: var(--site__footer_margin);
 }
 
 .site .site__nav {
