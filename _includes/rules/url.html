@@ -2,4 +2,4 @@
 {% assign rules = site.collections | where: "label","rules" | first %}
 {% assign relative_path =  name | prepend: "/" | prepend: rules.relative_directory | append: ".md" %}
 {% assign doc = site.rules | where: "relative_path", relative_path | first %}
-{{ doc.url }}
+{{ site.github.url }}{{ doc.url }}
