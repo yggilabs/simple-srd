@@ -1,7 +1,18 @@
 ---
 ---
+{% assign find = "the-core-system" %}
 {% assign items = site.data.menu %}
 {%- capture array -%}
 {%- include flatten.html items = items -%}
 {%- endcapture -%}
-{{ array | split: "," | inspect }}
+{% assign flattened = array | split: "," %}
+{% assign previous = nil %}
+{% while flattened %}
+{% if flattened.first == find %}
+  {{ previous }}
+  {{ flattened | shift }}
+{% end if %}
+{% assign previous = flattened.first %}
+{% assign flattened = flattened | shift %}
+{% endwhile %}
+
