@@ -4,4 +4,4 @@
 {% capture array %}
 {% include flatten.html items = items %}
 {% endcapture %}
-{{ array | split | inspect }}
+{{ array | split: "," | inspect }}
