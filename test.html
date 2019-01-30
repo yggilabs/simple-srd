@@ -1,5 +1,6 @@
 ---
 ---
-{%- assign find = "the-core-system" -%}
-{% include rules/previous.html find = find %}
-{% include rules/next.html find = find %}
+{%- assign name = "the-core-system" -%}
+{%- assign items = site.menu.data -%}
+{% include rules/previous.html name = name items = items %}
+{% include rules/next.html name = name items = items %}
