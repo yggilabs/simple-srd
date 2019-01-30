@@ -1,12 +1,4 @@
 - name: the-basics
   items:
     - name: the-core-system
-    - name: the-core-system-a
-      items:
-        - name: abc
-        - name: def
-    - name: the-core-system-b
-- name: the-basics-too
-  items:
-    - name: the-core-system
-    - name: the-core-system-b
+    - name: actions-and-ratings
