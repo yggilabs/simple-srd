@@ -7,7 +7,7 @@
 {% if item.items %}
 <details {% include menu/open.html items = item.items find = find %}>
   <summary>{{ item.name }}</summary>  
-  {% include menu/print.html items = item.items %}
+  {% include menu/print.html items = item.items find = find %}
 </details>
 {% else %}
 <a href="{{ item.name }}">{{ item.name }}</a>
