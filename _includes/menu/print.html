@@ -1,0 +1,16 @@
+
+<ul>
+{% assign items = include.items %}
+{% for item in items %}
+<li>
+{% if item.items %}
+<details>
+  <summary>{{ item.name }}</summary>  
+  {% include menu/print.html items = item.items %}
+</details>
+{% else %}
+<a href="{{ item.name }}">{{ item.name }}</a>
+{% endif %}
+</li>
+{% endfor %}
+</ul>
