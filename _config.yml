@@ -1,6 +1,8 @@
 collections:
   rules:
     output: true
+plugins:
+  - jekyll-seo-tag
 defaults:
 -
     scope:
