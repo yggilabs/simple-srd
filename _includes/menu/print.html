@@ -1,11 +1,11 @@
 
 <ul>
 {% assign items = include.items %}
-{% assign find = include.find %}
+{% assign key = include.find %}
 {% for item in items %}
 <li>
 {% if item.items %}
-<details {% include menu/open.html items = item.items find = find %}>
+<details {% include menu/open.html items = item.items find = key %}>
   <summary>{{ item.name }}</summary>  
   {% include menu/print.html items = item.items %}
 </details>
