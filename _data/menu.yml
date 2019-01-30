@@ -1,0 +1,9 @@
+- name: the-basics
+  items:
+    - name: the-core-system
+    - name: the-core-system-a
+    - name: the-core-system-b
+- name: the-basics-too
+  items:
+    - name: the-core-system
+    - name: the-core-system-b
