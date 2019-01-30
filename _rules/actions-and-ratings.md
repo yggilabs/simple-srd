@@ -1,6 +1,7 @@
 ---
 title: Actions &amp; Attributes
 ---
+
 ## Action Ratings
 
 There are 12 **actions** in the game that the player characters use to overcome obstacles.
