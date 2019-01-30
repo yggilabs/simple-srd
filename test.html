@@ -2,6 +2,7 @@
 ---
 <body>
 {% assign rules = site.collections | where: "label","rules" | first %}
+{{ rules | inspect }}
 {% assign relative_path =  "the-basics" | prepend: "/" | prepend: rules.directory_path | append: ".md" %}
 {{ relative_path }}
 {% assign doc = site.rules | where: "relative_path", relative_path | first %}
