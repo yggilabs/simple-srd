@@ -1,4 +1,5 @@
 # the site just reads the first seven or so colors so swap which is at the top toi change themes.
+
 # light theme
 - '#ffffff'
 - '#2b2c31'
@@ -8,6 +9,7 @@
 - '#9100b8'
 - '#b80083'
 - '#b80027'
+
 # dark theme
 - '#2b2c31'
 - '#ffffff'
