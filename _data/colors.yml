@@ -1,15 +1,5 @@
 # the site just reads the first seven or so colors so swap which is at the top toi change themes.
 
-# light theme
-- '#ffffff'
-- '#2b2c31'
-- '#007289'
-- '#002e89'
-- '#170089'
-- '#5b0089'
-- '#890072'
-- '#89002d'
-
 # dark theme
 - '#2b2c31'
 - '#ffffff'
@@ -19,3 +9,13 @@
 - '#7fffd4'
 - '#7feaff'
 - '#7faaff'
+
+# light theme
+- '#ffffff'
+- '#2b2c31'
+- '#007289'
+- '#002e89'
+- '#170089'
+- '#5b0089'
+- '#890072'
+- '#89002d'
