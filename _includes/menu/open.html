@@ -1,3 +1,5 @@
+open
+{% comment %}
 {% assign items = include.items %}
 {% assign find = include.find %
 {% for item in items %}
@@ -9,3 +11,4 @@
   {% endif %}
 {% endif %}
 {% endfor %}
+{% endcomment %}
