@@ -1,0 +1,17 @@
+.markdown-body :hover > a.permalink::before {
+  display: inline;
+}
+
+.markdown-body a.permalink::before {
+  content: '@';
+  display: none;
+  opacity: var(--permalink_opacity);
+}
+
+.markdown-body a.permalink:hover {
+  text-decoration: none;
+}
+
+.markdown-body a.permalink:hover::before {
+  opacity: 1;
+}
