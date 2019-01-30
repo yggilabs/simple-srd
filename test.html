@@ -1,8 +1,8 @@
 ---
 ---
 <body>
-{% site.rules | inspect %}
-{% site.collections | inspect %}
+{{ site.rules | inspect }}
+{{ site.collections | inspect }}
 {% assign rules = site.collections | where: "label","rules" %}
 {% assign relative_path = "the-basics" | prepend: rules.relative_directory | append: ".md" %}
 {{ relative_path }}
