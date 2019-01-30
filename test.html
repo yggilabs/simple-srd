@@ -3,7 +3,7 @@
 {% assign find = "the-core-system" %}
 {% assign items = site.data.menu %}
 {%- capture array -%}
-{%- include flatten.html items = items -%}
+{%- include data/flatten.html items = items -%}
 {%- endcapture -%}
 {% assign flattened = array | split: "," %}
 {% assign previous = nil %}
