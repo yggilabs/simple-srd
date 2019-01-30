@@ -1,7 +1,8 @@
 open
-{% comment %}
+
 {% assign items = include.items %}
 {% assign find = include.find %
+{% comment %}
 {% for item in items %}
 {% if item.items %}
   {% include menu/open.html items = item.items find = find %}
