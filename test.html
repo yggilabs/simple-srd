@@ -7,12 +7,19 @@
 {%- endcapture -%}
 {% assign flattened = array | split: "," %}
 {% assign previous = nil %}
-{% while flattened %}
-{% if flattened.first == find %}
-  {{ previous }}
-  {{ flattened | shift }}
-{% end if %}
-{% assign previous = flattened.first %}
-{% assign flattened = flattened | shift %}
-{% endwhile %}
+
+{% for item in flattened %}
+  {% if flattened.first == find %}
+    {{ previous }}
+  {% end if %}
+  {% assign previous = item %}
+{% endfor %}
+
+{% assign flattened = flattened | reverse %}
+{% for item in flattened %}
+  {% if flattened.first == find %}
+    {{ previous }}
+  {% end if %}
+  {% assign previous = item %}
+{% endfor %}
 
