@@ -1,4 +1,7 @@
 ---
 ---
 {% assign items = site.data.menu %}
+{% capture array %}
 {% include flatten.html items = items %}
+{% endcapture %}
+{{ array | split | inspect }}
