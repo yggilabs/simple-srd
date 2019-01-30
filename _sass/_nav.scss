@@ -1,0 +1,18 @@
+
+.nav {
+  position: sticky;
+  top: 0;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav a.active::after {
+  content: var(--a--active__after_content);
+  color: var(--a--active__after_color)
+}
+
+.nav .nav__title {
+  text-align: center; 
+}
