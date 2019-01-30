@@ -1,3 +1,15 @@
 .main h1, .main h2, .main h3 {
   color: var(--main__h_color);
 }
+
+.main .main__next {
+  text-align: right
+}
+
+.main .main__next::after {
+  content: '>'
+}
+
+.main .main__prev::before {
+  content: '<'
+}
