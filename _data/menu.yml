@@ -2,6 +2,9 @@
   items:
     - name: the-core-system
     - name: the-core-system-a
+      items:
+        - name: abc
+        - name: def
     - name: the-core-system-b
 - name: the-basics-too
   items:
