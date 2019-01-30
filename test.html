@@ -1,8 +1,7 @@
 ---
 ---
 <body>
-{% assign rules = site.collections | where: "label","rules" | first %}
-{% assign relative_path = "the-basics" | prepend: rules.relative_directory | append: ".md" %}
+{% assign relative_path = site.collections | where: "label","rules" | first | append: "/" | append:"the-basics" | append: ".md" %}
 {{ relative_path }}
 {% assign doc = site.rules | where: "relative_path", relative_path | first %}
 {{ doc.title }}
