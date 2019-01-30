@@ -1,22 +1,6 @@
 ---
 ---
-{% assign find = "the-core-system" %}
-{% assign items = site.data.menu %}
-{%- capture array -%}
-{%- include data/flatten.html items = items -%}
-{%- endcapture -%}
-{%- assign flattened = array | split: "," -%}
-{%- assign previous = nil -%}
-{%- for item in flattened -%}
-  {%- if item == find -%}
-{{ previous }}
-  {%- endif -%}
-  {%- assign previous = item -%}
-{%- endfor -%}
-{%- assign flattened = flattened | reverse -%}
-{%- for item in flattened -%}
-  {%- if item == find -%}
-{{ previous }}
-  {%- endif -%}
-  {%- assign previous = item -%}
-{%- endfor -%}
+{%- assign find = "the-core-system" -%}
+{%- assign items = site.data.menu -%}
+{%- include data/previous.html items = items find = find -%}
+{%- include data/next.html items = items find = find -%}
