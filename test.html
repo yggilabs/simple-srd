@@ -9,6 +9,8 @@
 {% assign previous = nil %}
 
 {% for item in flattened %}
+  {{ item }}
+  {{ previous }}
   {% if flattened.first == find %}
     {{ previous }}
   {% endif %}
