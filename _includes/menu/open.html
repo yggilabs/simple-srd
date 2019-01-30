@@ -5,6 +5,7 @@
   {% include menu/open.html items = item.items find = find %}
 {% else %}
   {{ item.name }}
+  {{ find }}
   {% if item.name == find %}
     open
   {% endif %}
