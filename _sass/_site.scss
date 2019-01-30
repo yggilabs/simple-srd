@@ -1,0 +1,48 @@
+
+.site strong {
+  color: var(--color__5, --color__lowlight);
+}
+
+.site em {
+  color: var(--color__6, --color__5, --color__lowlight);
+}
+
+.site strong > em {
+  color: var(--color__7, --color__5, --color__lowlight);
+}
+
+.site {
+  padding: var(--site_padding);
+}
+
+.site a {
+  color: var(--color__highlight);
+}
+
+.site, .site * {  
+  background-color: var(--color__background);
+  color: var(--color__foreground);
+}
+
+.site h1, .site h2, .site h3, .site .site__footer {
+  border-color: var(--color__lowlight);
+}
+
+/* BEM is cool but there are other cool things out there too I guess */
+.site .site__footer {  
+  border-top-width: var(--site__footer_border-top-width); /* why use magic numbers here? I can write them somewhere else like the top of this file */
+  border-top-style: var(--site__footer_border-top-style);
+  padding-top: var(--site__footer_padding-top);
+  grid-area: footer;
+  text-align: var(--site__footer_text-align);
+  margin: var(--site__footer_margin);
+}
+
+.site .site__nav {
+  padding: var(--site__nav_padding);
+}
+
+.site .site__main {
+  margin: var(--site__main_margin);
+  padding: var(--site__main_padding);
+}
