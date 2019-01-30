@@ -1,12 +1,12 @@
 {% assign items = include.items %}
-{% assign find = include.find %}
+{% assign key = include.find %}
 {% for item in items %}
 {% if item.items %}
-  {% include menu/open.html items = item.items find = find %}
+  {% include menu/open.html items = item.items find = key %}
 {% else %}
   {{ item.name }}
-  {{ find }}
-  {% if item.name == find %}
+  {{ key }}
+  {% if item.name == key %}
     open
   {% endif %}
 {% endif %}
