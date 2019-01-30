@@ -5,24 +5,18 @@
 {%- capture array -%}
 {%- include data/flatten.html items = items -%}
 {%- endcapture -%}
-{% assign flattened = array | split: "," %}
-{% assign previous = nil %}
-
-{% for item in flattened %}
-  {{ item }}
-  {{ previous }}
-  {% if flattened.first == find %}
-<h1>{{ previous }}</h1>
-  {% endif %}
-  {% assign previous = item %}
-{% endfor %}
-
-{% comment %}
-{% assign flattened = flattened | reverse %}
-{% for item in flattened %}
-  {% if flattened.first == find %}
-    {{ previous }}
-  {% endif %}
-  {% assign previous = item %}
-{% endfor %}
-{% endcomment %}
+{%- assign flattened = array | split: "," -%}
+{%- assign previous = nil -%}
+{%- for item in flattened -%}
+  {%- if item == find -%}
+{{ previous }}
+  {%- endif -%}
+  {%- assign previous = item -%}
+{%- endfor -%}
+{%- assign flattened = flattened | reverse -%}
+{%- for item in flattened -%}
+  {%- if item == find -%}
+{{ previous }}
+  {%- endif -%}
+  {%- assign previous = item -%}
+{%- endfor -%}
