@@ -6,6 +6,7 @@
 {{ relative_path }}
 {% assign doc = site.rules | where: "relative_path", relative_path | first %}
 {{ doc.title }}
+{{ doc.url }}
 {% comment %}
 {% include menu/print.html items = site.data.menu find = 'abc' %}
 {% endcomment %}
