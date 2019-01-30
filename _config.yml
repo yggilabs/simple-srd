@@ -1,6 +1,7 @@
 collections:
   rules:
     output: true
+    layout: default
 plugins:
   - jekyll-seo-tag
 remote_theme: non-binary-trees/simple-srd-core
