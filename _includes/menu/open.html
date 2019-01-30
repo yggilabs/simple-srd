@@ -3,7 +3,9 @@
 {% for item in items %}
 {% if item.items %}
   {% include menu/open.html items = item.items find = find %}
-{% elsif item.name == find %}
-  open
+{% else %}
+  {% if item.name == find %}
+    open
+  {% endif %}
 {% endif %}
 {% endfor %}
