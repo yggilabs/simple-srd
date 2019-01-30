@@ -6,10 +6,10 @@
   text-align: right
 }
 
-.main .main__next a::after {
+.main .main__next::after {
   content: ' >'
 }
 
-.main .main__prev a::before {
+.main .main__prev::before {
   content: '< '
 }
