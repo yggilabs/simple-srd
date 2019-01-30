@@ -1,5 +1,8 @@
 ---
 ---
+<body>
+{% site.rules | inspect %}
+{% site.collections | inspect %}
 {% assign rules = site.collections | where: "label","rules" %}
 {% assign relative_path = "the-basics" | prepend: rules.relative_directory | append: ".md" %}
 {{ relative_path }}
@@ -8,3 +11,4 @@
 {% comment %}
 {% include menu/print.html items = site.data.menu find = 'abc' %}
 {% endcomment %}
+</body>
