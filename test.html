@@ -15,6 +15,7 @@
   {% assign previous = item %}
 {% endfor %}
 
+{% comment %}
 {% assign flattened = flattened | reverse %}
 {% for item in flattened %}
   {% if flattened.first == find %}
@@ -22,4 +23,4 @@
   {% end if %}
   {% assign previous = item %}
 {% endfor %}
-
+{% endcomment %}
