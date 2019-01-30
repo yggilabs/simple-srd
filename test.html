@@ -1,6 +1,6 @@
 ---
 ---
-{{ site.collections.rules | jsonify }}
+{{ site.collections | jsonify }}{{ site.collections | inspect }}
 {% assign relative_path = "the-basics" | prepend: site.collections.rules.relative_directory | append: ".md" %}
 {{ relative_path }}
 {% assign doc = site.rules | where: "relative_path", relative_path | first %}
