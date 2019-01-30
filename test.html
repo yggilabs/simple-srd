@@ -1,25 +1,4 @@
 ---
 ---
 
-<ul>
-{% assign items = site.data.menu %}
-{% for item in items %}
-<li>
-{% if item.items %}
-<details>
-  <summary>{{ item.name }}</summary>  
-  <ul>  
-  {% assign items = item.items %}    
-  {% for item in items %}
-    <li>
-      <a href="{{ item.name }}">{{ item.name }}</a>
-    </li>
-  {% endfor %}
-  </ul>
-</details>
-{% else %}
-<a href="{{ item.name }}">{{ item.name }}</a>
-{% endif %}
-</li>
-{% endfor %}
-</ul>
+{% include menu/print.html items = site.data.menu %}
