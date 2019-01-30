@@ -3,11 +3,4 @@ collections:
     output: true
 plugins:
   - jekyll-seo-tag
-defaults:
--
-    scope:
-      path: ""
-      type: "rules"
-    values:
-      layout: "default"
 remote_theme: non-binary-trees/simple-srd-core
