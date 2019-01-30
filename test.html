@@ -1,5 +1,11 @@
 ---
 ---
-{{ page.date | date_to_rfc822 }}
-
+{{ site.time | date_to_rfc822 }}
+{% assign relative_path = "the-basics" | prepend: site.rules.relative_directory | append: ".md" %}
+{{ relative_path }}<br>
+{% assign doc = site.rules | where: "reltive_path", relative_path | first %}
+{{ doc.title }}<br>
+{{ site.rules }}
+{% comment %}
 {% include menu/print.html items = site.data.menu find = 'abc' %}
+{% endcomment %}
