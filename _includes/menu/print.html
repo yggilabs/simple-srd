@@ -7,11 +7,11 @@
 <li>
 {% if item.items %}
 <details {% include menu/open.html name = item.name items = item.items find = find %}>
-  <summary>{{ item.name }}</summary>  
+  <summary><a href="{{ item.name }}" {% include menu/active.html name = item.name find = find %}>{{ item.name }}</a></summary>  
   {% include menu/print.html name = item.name items = item.items find = find %}
 </details>
 {% else %}
-<a href="{{ item.name }}">{{ item.name }}</a>
+<a href="{{ item.name }}" {% include menu/active.html name = item.name find = find %}>{{ item.name }}</a>
 {% endif %}
 </li>
 {% endfor %}
