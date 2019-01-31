@@ -1,3 +1,5 @@
+name: Simple SRD: An easy to use template for quickly creating SRD style documents and webpages.
+short_name: Simple SRD
 collections:
   rules:
     output: true
