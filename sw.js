@@ -1,6 +1,5 @@
 ---
 ---
-
 var CACHE_NAME = 'cache-{{ site.time }}';
 var urlsToCache = ['{{ site.github.baseurl }}/'{% for product in site.products %}, '{{ site.baseurl }}{{ product.url }}'{% endfor %}];
 
