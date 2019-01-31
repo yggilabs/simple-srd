@@ -1,5 +1,5 @@
-name: Simple SRD
-short_name: Simple SRD
+name: simple-srd
+short_name: simple-srd
 collections:
   rules:
     output: true
