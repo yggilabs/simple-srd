@@ -28,7 +28,7 @@ title: Dwarf
 
 ***Languages.***  You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.
 
-#### Hill Dwarf
+### Hill Dwarf
 
 As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience.
 
