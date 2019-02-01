@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _data/colors.yml
   label: Colors
-  match: "**/*"
 - type: directory
   path: _docs
   label: Docs
