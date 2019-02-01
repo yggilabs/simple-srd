@@ -1,0 +1,27 @@
+---
+label: Menu
+hide_body: 
+is_partial: 
+fields:
+- name: Menu
+  label: Menu
+  type: field_group_list
+  fields:
+  - name: name
+    label: Name
+    type: text
+    hidden: false
+    default: ''
+  - name: items
+    label: Items
+    type: field_group_list
+    fields:
+    - name: name
+      label: Name
+      type: text
+      hidden: false
+      default: ''
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
