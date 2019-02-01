@@ -13,6 +13,7 @@
   --site__main_margin: 0 64px;
   --site__main_padding: 64px;
   --main__h_color: var(--color__highlight);
+  --table_max-width: calc(100vw - 4 * 64px); /* 64px should actully com from somewhere like --site__main_margin-left, --site__main_margin-right, --site__main_padding-left, --site__main_padding-right */
 }
 
 @media (max-width: 1024px) {
@@ -24,6 +25,7 @@
     --site__main_padding: 0;
     --site__footer_margin: 0 0 128px 0;
     --site__footer_text-align: center;
+    --table_max-width: calc(100vw - 2 * 8px);
   }
 }
 
