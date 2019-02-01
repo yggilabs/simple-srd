@@ -1,5 +1,7 @@
-# simple-srd
+---
+title: simple-srd
 
+---
 An easy to use template for quickly creating SRD style documents and webpages. Minimum styling for customizable theming.
 
 ## Setup
@@ -13,9 +15,9 @@ An easy to use template for quickly creating SRD style documents and webpages. M
 
 ## Usage
 
-Creating a great webpage doesn't require you to know any javascript, css or even html. The are only a couple types of files you will ever need to touch. The first type of file is called a YAML file with the .yml extension. It stores structured data in text format. 
+Creating a great webpage doesn't require you to know any javascript, css or even html. The are only a couple types of files you will ever need to touch. The first type of file is called a YAML file with the .yml extension. It stores structured data in text format.
 
-Currently there is only a single file of this type called links.yml. It stores any links that you want to appear in your navigation menu. 
+Currently there is only a single file of this type called links.yml. It stores any links that you want to appear in your navigation menu.
 
 [file](https://github.com/non-binary-trees/simple-srd/blob/master/_data/links.yml)
 
@@ -156,7 +158,7 @@ That should be enough to get you started on making your very own SRD document fo
 
 ## Attribution
 
-I have used text from the Gold ENnie award winning website [bladesinthedark.com](https://bladesinthedark.com/) because it is a great example of how to make an SRD. I hope this project allows people publish their games without technology getting in the way. 
+I have used text from the Gold ENnie award winning website [bladesinthedark.com](https://bladesinthedark.com/) because it is a great example of how to make an SRD. I hope this project allows people publish their games without technology getting in the way.
 
 And heres the legal stuff...
 
