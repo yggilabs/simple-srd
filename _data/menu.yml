@@ -2,4 +2,14 @@
   items:
     - name: the-core-system
     - name: actions-and-ratings
-- name: as-you-like-it
+- name: races/index
+  items:
+    - name: races/dragonborn
+    - name: races/dwarf
+    - name: races/elf
+    - name: races/gnome
+    - name: races/half-elf
+    - name: races/half-orc
+    - name: races/halfling
+    - name: races/human
+    - name: races/tiefling
