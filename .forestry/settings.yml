@@ -4,18 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: _data/links.yml
-  label: Links
-- type: document
-  path: _data/menu.yml
-  label: Menu
-- type: document
-  path: _data/keywords.yml
-  label: Keywords
-- type: document
-  path: _data/colors.yml
-  label: Colors
+- type: heading
+  label: Documents
 - type: directory
   path: _docs
   label: Docs
@@ -28,6 +18,20 @@ sections:
   create: all
   templates:
   - default
+- type: heading
+  label: Config
+- type: document
+  path: _data/colors.yml
+  label: Colors
+- type: document
+  path: _data/menu.yml
+  label: Menu
+- type: document
+  path: _data/keywords.yml
+  label: Keywords
+- type: document
+  path: _data/links.yml
+  label: Links
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
