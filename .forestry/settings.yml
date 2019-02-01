@@ -7,15 +7,12 @@ sections:
 - type: document
   path: _data/links.yml
   label: Links
-  match: "**/*"
 - type: document
   path: _data/menu.yml
   label: Menu
-  match: "**/*"
 - type: document
   path: _data/keywords.yml
   label: Keywords
-  match: "**/*"
 - type: document
   path: _data/colors.yml
   label: Colors
