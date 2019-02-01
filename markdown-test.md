@@ -62,10 +62,6 @@ end
 
 * * *
 
-- - -
-
-* * *
-
 ### Here is an unordered list:
 
 *   Item foo
