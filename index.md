@@ -16,8 +16,8 @@ Simple SRD is a project meant to quickly allow you to publish websites for [SRD]
   * **Mobile app** Your website offeers a near native experience for mobile users who choose to "install".
   
 * **Customization** It's your website, we give you the tools to make it how you want without making it complicated.
- * **Themes** Choose a theme or make your own.
- * **Configuration** Easy to use configuration. With sensible deafaults. No digging through settings.
+  * **Themes** Choose a theme or make your own.
+  * **Configuration** Easy to use configuration. With sensible deafaults. No digging through settings.
 
 
 ## Legal Stuff
