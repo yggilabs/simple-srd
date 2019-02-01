@@ -1,5 +1,7 @@
-- label: blades in the dark
+- label: Blades in the Dark SRD
   url: https://bladesinthedark.com
-- label: internal link
+- lbael: D&amp;D 5e SRD
+  url: http://dnd.wizards.com/articles/features/systems-reference-document-srd
+- label: legal stuff
   type: internal
-  url: /index 
+  url: /legal
