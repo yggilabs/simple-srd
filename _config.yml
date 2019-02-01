@@ -1,7 +1,7 @@
 name: simple-srd
 short_name: simple-srd
 collections:
-  rules:
+  docs:
     output: true
 plugins:
   - jekyll-seo-tag
@@ -9,6 +9,6 @@ remote_theme: non-binary-trees/simple-srd-core
 defaults:
   - scope:
       path: ""
-      type: rules
+      type: docs
     values:
       layout: default

@@ -59,7 +59,7 @@ This file has two parts. The top section between the two '---' is YAML just like
 
 You can edit this using markdown to create a home page with whatever information you want visitors to see when they first visit your page.
 
-The other page on your website will be rules. There are two types of rules pages. First is a rules section, this groups related sections of rules together under a heading in your navigation menu. Our section sample is called [the-basics.md](https://github.com/non-binary-trees/simple-srd/blob/master/_rules/the-basics.md)
+The other page on your website will be docs. There are two types of docs pages. First is a docs section, this groups related sections of docs together under a heading in your navigation menu. Our section sample is called [the-basics.md](https://github.com/non-binary-trees/simple-srd/blob/master/_docs/the-basics.md)
 
 ```Markdown
 ---
@@ -97,7 +97,7 @@ During a session, the crew of scoundrels works together to choose a score to acc
 
 Just like before we set a title in the first section. Then we, wrote our content with a few extras for formatting.
 
-The other type of rules file is the kind that goes into a section. This sample is called [the-core-system.md](https://github.com/non-binary-trees/simple-srd/blob/master/_rules/the-core-system.md)
+The other type of docs file is the kind that goes into a section. This sample is called [the-core-system.md](https://github.com/non-binary-trees/simple-srd/blob/master/_docs/the-core-system.md)
 
 ```Markdown
 ---
@@ -148,7 +148,7 @@ During the downtime phase, the GM engages the systems for payoff, heat, and enta
 The phases are a conceptual model to help you organize the game. They’re not meant to be rigid structures that restrict your options (this is why they’re presented as amorphous blobs of ink without hard edges). Think of the phases as a menu of options to fit whatever it is you’re trying to accomplish in play. Each phase suits a different goal.
 ```
 
-This is very similar to the last file with one notable exception. We defined a category variable in the YAML section. This has to match file name of the rules section this page belongs to.
+This is very similar to the last file with one notable exception. We defined a category variable in the YAML section. This has to match file name of the docs section this page belongs to.
 
 If you are familiar with CSS you may want to check out the [custom css](https://github.com/non-binary-trees/simple-srd/blob/master/_sass/_custom.scss) file to modify the theme to your liking.
 
