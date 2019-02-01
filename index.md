@@ -8,7 +8,7 @@ A useful example of a homepage may happen eventually. Until then, you get this.
 
 Some of the content on this site is from the Blades in the Dark SRD.
 
-> This work is based on [Blades in the Dark](found at http://www.bladesinthedark.com/), product of One Seven Design, developed and authored by John Harper, and licensed for our use under the [Creative Commons Attribution 3.0 Unported license](http://creativecommons.org/licenses/by/3.0/).
+> This work is based on [Blades in the Dark](http://www.bladesinthedark.com/), product of One Seven Design, developed and authored by John Harper, and licensed for our use under the [Creative Commons Attribution 3.0 Unported license](http://creativecommons.org/licenses/by/3.0/).
 
 I am using some Dungeons &amp; Dragons content as an example of how to use my project. Here's the license please don't sue me.
 
