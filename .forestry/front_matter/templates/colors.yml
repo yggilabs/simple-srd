@@ -1,0 +1,10 @@
+---
+label: colors
+hide_body: 
+is_partial: 
+fields:
+- name: Colors
+  label: Colors
+  type: list
+  hidden: false
+  default: ''
