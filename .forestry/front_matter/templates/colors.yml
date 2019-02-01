@@ -1,10 +1,18 @@
 ---
 label: colors
-hide_body: 
-is_partial: 
+hide_body: false
+is_partial: false
 fields:
-- name: Colors
-  label: Colors
-  type: list
-  hidden: false
-  default: ''
+- type: color
+  config:
+    color_format: Hex
+  name: ''
+  label: ''
+- type: color
+  name: foreground
+  config:
+    color_format: Hex
+    required: true
+  label: foreground
+  description: main foreground color. primary text color
+  default: "#702B2B"
