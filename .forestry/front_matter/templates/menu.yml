@@ -1,7 +1,7 @@
 ---
 label: Menu
-hide_body: 
-is_partial: 
+hide_body: true
+is_partial: false
 fields:
 - name: Menu
   label: Menu
