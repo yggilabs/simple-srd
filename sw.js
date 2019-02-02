@@ -17,7 +17,7 @@ layout: strip
 {% endcapture %}
 {% assign urls = urls | strip_newlines | strip %}
 
-var VERSION = 'cache-{{ site.time | date_to_xmlschema }}';
+var VERSION = '{{ site.time | date_to_xmlschema }}';
 var urlsToCache = [{{ urls }}];
 
 this.addEventListener('install', function(e) {
