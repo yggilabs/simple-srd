@@ -17,7 +17,7 @@ layout: strip
 {% endcapture %}
 {% assign urls = urls | strip_newlines | strip %}
 
-var VERSION = 'cache-{{ site.time | date_to_string  | slugify }}';
+var VERSION = 'cache-{{ site.time | slugify }}';
 var urlsToCache = [{{ urls }}];
 
 this.addEventListener('install', function(e) {
