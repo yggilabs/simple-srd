@@ -1,7 +1,7 @@
 ---
 ---
 var CACHE_NAME = 'cache-{{ site.time }}';
-var urlsToCache = [];
+var urlsToCache = [{{ site.pages | map: "url" | join: ", " }}];
 
 self.addEventListener('install', function(event) {
   // Perform install steps
