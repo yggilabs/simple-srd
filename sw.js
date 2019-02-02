@@ -9,8 +9,8 @@ layout: strip
 {% assign docs = site.collections | where: "label","docs" | first %}
 {% capture urls %}
 "/"
-{% for name in names %}
-{{ name | prepend: "/" | prepend: docs.relative_directory | prepend: ","" | append: """}}
+{% for item in names %}
+{{ item | prepend: "/" | prepend: docs.relative_directory | ",''" | append: "''"}}
 {% endfor %}
 {% endcapture %}
 {% assign urls = urls | strip_newlines | strip %}
