@@ -7,10 +7,13 @@ layout: strip
 {% endcapture %}
 {% assign names = array | strip | split: "," %}
 
+{% assign docs = site.collections | where: "label","docs" | first %}
+{{ docs | inspect }}
+
 {% capture urls %}
 "/"
 {% for name in names %}
-,"{{ name }}"
+,"/docs/{{ name }}"
 {% endfor %}
 {% endcapture %}
 {% assign urls = urls | strip_newlines | strip %}
