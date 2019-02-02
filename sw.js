@@ -9,7 +9,7 @@ layout: strip
 {% assign names = array | strip | split: "," %}
 
 {% assign docs = site.collections | where: "label","docs" | first %}
-
+{{ names | inpsect }}
 {% capture urls %}
 "/"
 {% for name in names %}
