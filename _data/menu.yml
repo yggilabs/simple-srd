@@ -18,6 +18,6 @@
     - name: abilities/strength
     - name: abilities/dexterity
     - name: abilities/constitution
-    - name: abilities/intellidence
+    - name: abilities/intelligence
     - name: abilities/wisdom
     - name: abilities/charisma
