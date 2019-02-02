@@ -4,7 +4,12 @@ title: Using Ability Scores
 
 Six abilities provide a quick description of every creature’s physical and mental characteristics:
 
-- **Strength** , measuring physical power - **Dexterity** , measuring agility - **Constitution** , measuring endurance - **Intelligence** , measuring reasoning and memory - **Wisdom** , measuring perception and insight - **Charisma** , measuring force of personality
+- **Strength** , measuring physical power
+- **Dexterity** , measuring agility
+- **Constitution** , measuring endurance
+- **Intelligence** , measuring reasoning and memory
+- **Wisdom** , measuring perception and insight
+- **Charisma** , measuring force of personality
 
 Is a character muscle-­‐‑bound and insightful? Brilliant and charming? Nimble and hardy? Ability scores define these qualities—a creature’s assets as well as weaknesses. The three main rolls of the game—the ability check, the saving throw, and the attack roll—rely on the six ability scores. The book’s introduction describes the basic rule behind these rolls: roll a d20, add an ability modifier derived from one of the six ability scores, and compare the total to a target number.
 
@@ -19,7 +24,8 @@ Each of a creature’s abilities has a score, a number that defines the magnitud
 | 1 − 2 | 2 – 3 | 4 – 5 | 6 – 7 | 8 – 9 | 10 – 11 | 12 – 13 | 14 – 15 | 16 – 17 | 18 – 19 | 20 – 21 | 22 – 23 | 24 – 25 | 26 – 27 | 28 – 29 | 30  |
 |-------|-------|-------|-------|-------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----|
 | -5    | -4    | -3    | -2    | -1    | +0      | +1      | +2      | +3      | +4      | +5      | +6      | +7      | +8      | +9      | +10 |
-   To determine an ability modifier without consulting the table, subtract 10 from the ability score and then divide the total by 2 (round down). Because ability modifiers affect almost every attack roll, ability check, and saving throw, ability modifiers come up in play more often than their associated scores.
+
+To determine an ability modifier without consulting the table, subtract 10 from the ability score and then divide the total by 2 (round down). Because ability modifiers affect almost every attack roll, ability check, and saving throw, ability modifiers come up in play more often than their associated scores.
 
 ## Advantage and Disadvantage
 
