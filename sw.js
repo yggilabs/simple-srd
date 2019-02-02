@@ -1,7 +1,7 @@
 ---
 layout: strip
 ---
-
+{% assign itmes = site.data.menu %}
 {% capture array %}
 {% include data/flatten.html items = items %}
 {% endcapture %}
@@ -9,8 +9,8 @@ layout: strip
 {% assign docs = site.collections | where: "label","docs" | first %}
 {% capture urls %}
 "/"
-{% for item in names %}
-,"{{ item }}"
+{% for name in names %}
+,"{{ name }}"
 {% endfor %}
 {% endcapture %}
 {% assign urls = urls | strip_newlines | strip %}
