@@ -36,6 +36,9 @@
   url: /docs/actions-and-ratings#actions
 - name: Sway
   url: /docs/actions-and-ratings#actions
+# you may set scope for which the rule is valid
+- name: Tinker
+  scope: /docs/races
 - name: Tinker
   url: /docs/actions-and-ratings#actions
 - name: Wreck
