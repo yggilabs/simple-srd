@@ -2,15 +2,18 @@
 layout: strip
 ---
 {% assign itmes = site.data.menu %}
+
 {% capture array %}
 {% include data/flatten.html items = items %}
 {% endcapture %}
 {% assign names = array | strip | split: "," %}
+
 {% assign docs = site.collections | where: "label","docs" | first %}
+
 {% capture urls %}
 "/"
 {% for name in names %}
-,"{{ name }}"
+,"{{ docs.relative_directory | append: name }}"
 {% endfor %}
 {% endcapture %}
 {% assign urls = urls | strip_newlines | strip %}
