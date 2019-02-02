@@ -10,8 +10,8 @@ layout: strip
 {% assign docs = site.collections | where: "label","docs" | first %}
 {% capture urls %}
 "/"
-{% for name in names %}
-,"{{ docs.relative_directory | append: name }}"
+{% for doc in docs %}
+,"{{ doc.url | remove: ".html" }}"
 {% endfor %}
 {% endcapture %}
 {% assign urls = urls | strip_newlines | strip %}
