@@ -1,17 +1,19 @@
 ---
 layout: strip
 ---
-{% assign prefix = "/docs/" %}
 {% assign items = site.data.menu %}
 {% capture array %}
 {% include data/flatten.html items = items %}
 {% endcapture %}
 {% assign names = array | strip | split: "," %}
 
+{% assign docs = site.collections | where: "label","docs" | first %}
+{{ docs | inspect }}
+
 {% capture urls %}
 "/"
 {% for name in names %}
-,"{{ prefix }}{{ name }}"
+,"/docs/{{ name }}"
 {% endfor %}
 {% endcapture %}
 {% assign urls = urls | strip_newlines | strip %}
