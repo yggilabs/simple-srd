@@ -14,3 +14,29 @@
   url: /docs/races/human
 - name: Tieflings
   url: /docs/races/tiefling
+- name:
+  url: /docs/the-basics#actions
+- name: Attune
+  url: /docs/the-basics#actions
+- name: Command
+  url: /docs/the-basics#actions
+- name: Consort
+  url: /docs/the-basics#actions
+- name: Finesse
+  url: /docs/the-basics#actions
+- name: Hunt
+  url: /docs/the-basics#actions
+- name: Prowl
+  url: /docs/the-basics#actions
+- name: Skirmish
+  url: /docs/the-basics#actions
+- name: Study
+  url: /docs/the-basics#actions
+- name: Survey
+  url: /docs/the-basics#actions
+- name: Sway
+  url: /docs/the-basics#actions
+- name: Tinker
+  url: /docs/the-basics#actions
+- name: Wreck
+  url: /docs/the-basics#actions
