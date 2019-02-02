@@ -1,7 +1,22 @@
 ---
+layout: strip
 ---
+
+{% capture array %}
+{% include data/flatten.html items = items %}
+{% endcapture %}
+{% assign names = array | strip | split: "," %}
+{% assign docs = site.collections | where: "label","docs" | first %}
+{% capture urls %}
+"/"
+{% for name in names %}
+{{ name | prepend: "/" | prepend: docs.relative_directory | prepend: ","" | append: """}}
+{% endfor %}
+{% endcapture %}
+{% assign urls = urls | strip_newlines | strip %}
+
 var CACHE_NAME = 'cache-{{ site.time }}';
-var urlsToCache = [{{ site.pages | map: "url" | join: ", " }}];
+var urlsToCache = [{{ urls }}];
 
 self.addEventListener('install', function(event) {
   // Perform install steps
