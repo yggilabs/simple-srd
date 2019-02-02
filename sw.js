@@ -10,7 +10,7 @@ layout: strip
 {% capture urls %}
 "/"
 {% for item in names %}
-{{ item | prepend: "/" | prepend: docs.relative_directory | ",''" | append: "''"}}
+,"{{ item }}"
 {% endfor %}
 {% endcapture %}
 {% assign urls = urls | strip_newlines | strip %}
