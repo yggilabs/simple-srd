@@ -10,7 +10,7 @@ layout: strip
 {% capture urls %}
 "/"
 {% for name in names %}
-,"/docs/{{ name }}"
+,"{{ name }}"
 {% endfor %}
 {% endcapture %}
 {% assign urls = urls | strip_newlines | strip %}
