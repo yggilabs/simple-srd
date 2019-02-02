@@ -1,15 +1,13 @@
 ---
 layout: strip
 ---
-{% assign itmes = site.data.menu %}
-
+{% assign items = site.data.menu %}
 {% capture array %}
 {% include data/flatten.html items = items %}
 {% endcapture %}
 {% assign names = array | strip | split: "," %}
 
 {% assign docs = site.collections | where: "label","docs" | first %}
-{{ names | inpsect }}
 {% capture urls %}
 "/"
 {% for name in names %}
