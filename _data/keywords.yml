@@ -1,3 +1,5 @@
+- name: Size and Strength
+  exclude: true
 - name: Dwarves
   url: /docs/races/dwarves
 - name: Elves
