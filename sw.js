@@ -2,6 +2,7 @@
 layout: strip
 ---
 {% assign docs = site.collections | where: "label","docs" | first %}
+{{ docs | inspect }}
 {% capture urls %}
 "/"
 {% for doc in docs %}
