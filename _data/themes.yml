@@ -1,0 +1,38 @@
+# Venom Theme
+- name: default
+  colors:
+    # background
+    - '#2b2c31' # black
+
+    # primary text
+    - '#ffffff' # white
+
+    # primary links
+    - '#eaff7f' # yellow-green
+
+    # rules and nav markers
+    - '#aaff7f' # green
+
+    # **strong** __text__
+    - '#7fff94' # light-green
+
+    # *emphasised* _text_
+    - '#7fffd4' # cyan
+
+    # ***strong*** __*emphasised*__ **_text_**
+    - '#7feaff' # light-blue
+
+    # not used
+    - '#7faaff' # periwinkle
+
+# Alternate Light Theme
+- name: light
+  colors:
+  - '#ffffff'
+  - '#2b2c31'
+  - '#007289'
+  - '#002e89'
+  - '#170089'
+  - '#5b0089'
+  - '#890072'
+  - '#89002d'
