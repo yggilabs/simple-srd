@@ -1,15 +1,3 @@
-- name: stength
-  url: /docs/abilities/strength
-- name: dexterity
-  url: /docs/abilities/dexterity
-- name: constitution
-  url: /docs/abilities/constitution
-- name: intelligence
-  url: /docs/abilities/intelligence
-- name: wisdom
-  url: /docs/abilities/wisdom
-- name: charisma
-  url: /docs/abilities/charisma
 - name: Stength
   url: /docs/abilities/strength
 - name: Dexterity
