@@ -1,19 +1,11 @@
 ---
 layout: strip
 ---
-{% assign items = site.data.menu %}
-{% capture array %}
-{% include data/flatten.html items = items %}
-{% endcapture %}
-{% assign names = array | strip | split: "," %}
-
 {% assign docs = site.collections | where: "label","docs" | first %}
-{{ docs | inspect }}
-
 {% capture urls %}
 "/"
-{% for name in names %}
-,"/docs/{{ name }}"
+{% for doc in docs %}
+,"{{ doc.url | remove: site.github.url | remove: ".html" }}"
 {% endfor %}
 {% endcapture %}
 {% assign urls = urls | strip_newlines | strip %}
