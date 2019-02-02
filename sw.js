@@ -12,7 +12,7 @@ layout: strip
 {% capture urls %}
 "/{{ site.github.baseurl }}"
 {% for name in names %}
-,"/{{ site.github.baseurl }}{{ collection.label }}/{{ name }}"
+,"{{ site.github.baseurl }}/{{ collection.label }}/{{ name }}"
 {% endfor %}
 {% endcapture %}
 {% assign urls = urls | strip_newlines | strip %}
