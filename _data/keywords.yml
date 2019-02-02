@@ -43,3 +43,5 @@
   url: /docs/actions-and-ratings#actions
 - name: Wreck
   url: /docs/actions-and-ratings#actions
+- name: Dexterity
+  scope: /docs/abilities/dexterity
