@@ -20,15 +20,15 @@ body, .site, .site * {
   color: var(--color__foreground);
 }
 
-.site strong, .site strong > .keyword {
+.site strong, .site strong > .keyword, .site strong > .keyword:hover {
   color: var(--color__5, --color__lowlight);
 }
 
-.site em, .site em > .keyword {
+.site em, .site em > .keyword, .site em > .keyword:hover {
   color: var(--color__6, --color__5, --color__lowlight);
 }
 
-.site strong > em, .site strong > em > .keyword {
+.site strong > em, .site strong > em > .keyword, .site strong > em > .keyword:hover {
   color: var(--color__7, --color__5, --color__lowlight);
 }
 
@@ -36,12 +36,6 @@ body, .site, .site * {
   border-color: var(--color__lowlight);
 }
 
-
-
-/* this makes the end of the underlines more consistent in chrome at least */
-.site .keyword::after {
-  content: ' ';
-}
 
 /* BEM is cool but there are other cool things out there too I guess */
 .site .site__footer {
