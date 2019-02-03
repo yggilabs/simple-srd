@@ -31,8 +31,13 @@ body, .site, .site * {
   border-color: var(--color__lowlight);
 }
 
-.site .keyword {
+.site .keyword, .site .keyword:hover {
   text-decoration: underline wavy var(--color__8, --color__foreground);
+}
+
+/* this makes the end of the underlines more consistent in chrome at least */
+.site .keyword::after {
+  content: ' ';
 }
 
 /* BEM is cool but there are other cool things out there too I guess */
