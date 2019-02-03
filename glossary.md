@@ -7,7 +7,7 @@ title: Glossary
   {% assign names = item.name %}
   {% assign def = item.def %}
   {% for name in names %}
-  <dt><dfn id="{{ name | slugify }}">{{ name }}</dfn></dt>
+  <dt><dfn{% if forloop.first %} id="{{ name | slugify }}"{% endif %}>{{ name }}</dfn></dt>
   {% endfor %}
   <dd>{{ def }}</dd>
 {% endfor %}
