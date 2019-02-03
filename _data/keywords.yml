@@ -65,5 +65,22 @@
 - name: Wreck
   url: /docs/actions-and-ratings#actions
 
+- name: Strength
+  scope: /docs/abilities/strength
+
 - name: Dexterity
   scope: /docs/abilities/dexterity
+
+- name: Intelligence
+  scope: /docs/abilities/intelligence
+
+- name: Wisdom
+  scope: /docs/abilities/wisdom
+
+- name: Charisma
+  scope: /docs/abilities/charisma
+
+# using scope in apositive way
+- name: Draconic Ancestry table
+  scope: /docs/races/dragonborn
+  url: /docs/races/dragonborn#draconic-ancestry
