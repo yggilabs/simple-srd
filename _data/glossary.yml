@@ -1,0 +1,4 @@
+- name:
+    - dice
+    - die
+  def: a thing you roll
