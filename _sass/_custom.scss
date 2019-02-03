@@ -1,10 +1,10 @@
 /* ignore me being preachy about css */
 :root {
-  --env_breakpoint: #{$env_breakpoint};
+  --env_breakpoint: #{$env_breakpoint}  ;
 
   --site_padding: 0;  /* "_" isnt really used in my naming scheme so I use it to show a css attribute relationship */
-  --site_max-width: calc(--env_breakpoint * 2);
-  --site_min-width: --env_breakpoint;
+  --site_max-width: calc(var(--env_breakpoint) * 1.5);
+  --site_min-width: var(--env_breakpoint);
   --site_width: 80%;
   --site_margin: 0 auto;
 
