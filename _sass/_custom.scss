@@ -28,7 +28,7 @@
 
 }
 
-@media (max-width: 1280px) {
+@media (max-width: $env_breakpoint) {
   /* using media queries to modify paramterized classes is the cool way to write css ❄❄❄ */
   :root {
     --site_max-width: initial;
