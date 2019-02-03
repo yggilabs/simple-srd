@@ -1,5 +1,6 @@
 name: simple-srd
 short_name: simple-srd
+theme_name: light
 collections:
   docs:
     output: true
