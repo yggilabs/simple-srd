@@ -2,6 +2,7 @@
   url: https://bladesinthedark.com
 - label: D&amp;D 5e SRD
   url: http://dnd.wizards.com/articles/features/systems-reference-document-srd
-- label: legal stuff
-  type: internal
-  url: /legal
+- label: Legal Stuff
+  url: /simple-srd/legal
+- label: Glossary
+  url: /simple-srd/glossary
