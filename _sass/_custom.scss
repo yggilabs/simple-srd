@@ -1,32 +1,38 @@
 /* ignore me being preachy about css */
 :root {
   --site_padding: 0;  /* "_" isnt really used in my naming scheme so I use it to show a css attribute relationship */
+  --site_max-width: 2048px;
+  --site_min-width: 1024px;
+  --site_width: 80%;
+  --site_margin: 0 auto;
+
   --site__footer_border-top-width: 1px;
   --site__footer_border-top-style: solid;
   --site__footer_padding-top: 24px;
   --site__footer_margin: 0 128px 128px 64px;
   --site__footer_text-align: right;
-  --site__max_width: 2048px;
-  --site__min_width: 1024px;
-  --site__width: 80%;
-  --site__margin: 0 auto;
-  /* emojis are 🔥 */
-  --a--active__after_content: '!'; /*'🔥'; /* idk whats up with these variable names either */
-  --a--active__after_color: var(--color__lowlight);
+
   --site__nav_padding: 0 64px;
   --site__main_margin: 0 64px;
   --site__main_padding: 64px;
+
   --main__h_color: var(--color__highlight);
+
   --table_max-width: calc(100vw - 4 * 64px); /* 64px should actully com from somewhere like --site__main_margin-left, --site__main_margin-right, --site__main_padding-left, --site__main_padding-right */
+
+  /* emojis are 🔥 */
+  --a--active__after_content: '!'; /*'🔥'; /* idk whats up with these variable names either */
+  --a--active__after_color: var(--color__lowlight);
+
 }
 
 @media (max-width: 1024px) {
   /* using media queries to modify paramterized classes is the cool way to write css ❄❄❄ */
   :root {
-    --site__max_width: initial;
-    --site__min_width: initial;
-    --site__width: initial;
-    --site__margin: initial;
+    --site_max-width: initial;
+    --site_min-width: initial;
+    --site_width: initial;
+    --site_margin: initial;
     --site_padding: 0 8px;
     --site__nav_padding: 0;
     --site__main_margin: 0;

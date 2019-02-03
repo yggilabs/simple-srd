@@ -1,11 +1,12 @@
 .site {
+  margin: var(--site_margin);
   padding: var(--site_padding);
   max-width: var(--site_max-width);
   min-width: var(--site_min-width);
   width: var(--site_width);
 }
 
-.site, .site * {
+body, .site, .site * {
   background-color: var(--color__background);
   color: var(--color__foreground);
 }
