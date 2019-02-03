@@ -33,12 +33,19 @@
 - name: Halflings
   url: /docs/races/halflings
 
-# can use an array of names if they are alias
+# can use an array of names if they are alias. place longer names first usually
 - name:
-    - Human
     - Humans
-    - human
     - humans
+    - Human
+    - human
+  scope: /docs/races/human
+
+- name:
+    - Humans
+    - humans
+    - Human
+    - human
   url: /docs/races/human
 
 - name: Tieflings
