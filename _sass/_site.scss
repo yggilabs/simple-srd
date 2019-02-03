@@ -31,8 +31,8 @@ body, .site, .site * {
   border-color: var(--color__lowlight);
 }
 
-.site .main :not(h1):not(h2):not(h3) > a.keyword {
-    text-decoration: underline;
+.site .keyword {
+  text-decoration: underline wavy var(--color__8, --color__foreground);
 }
 
 /* BEM is cool but there are other cool things out there too I guess */

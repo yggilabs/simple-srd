@@ -1,8 +1,12 @@
+$env_breakpoint: 1024px;
+
 /* ignore me being preachy about css */
 :root {
+  --env_breakpoint: $env_breakpoint;
+
   --site_padding: 0;  /* "_" isnt really used in my naming scheme so I use it to show a css attribute relationship */
-  --site_max-width: 2048px;
-  --site_min-width: 1024px;
+  --site_max-width: calc(--env_breakpoint * 2);
+  --site_min-width: --env_breakpoint;
   --site_width: 80%;
   --site_margin: 0 auto;
 
@@ -26,7 +30,7 @@
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $env_breakpoint) {
   /* using media queries to modify paramterized classes is the cool way to write css ❄❄❄ */
   :root {
     --site_max-width: initial;
