@@ -10,7 +10,8 @@ layout: strip
 {% assign collection = site.collections | where: "label","docs" | first %}
 
 {% capture urls %}
-"{{ site.github.baseurl }}/"
+"{{ site.github.baseurl }}/",
+"{{ site.github.baseurl }}/glossary"
 {% for name in names %}
 ,"{{ site.github.baseurl }}/{{ collection.label }}/{{ name }}"
 {% endfor %}
