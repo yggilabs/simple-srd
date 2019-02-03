@@ -1,6 +1,6 @@
 /* ignore me being preachy about css */
 :root {
-  /* --env_breakpoint: #{$env_breakpoint};  required to wrap sass variable in #{} to assign to a varioable more some mysterious reason */
+  /* --env_breakpoint: $env_breakpoint;  required to wrap sass variable in to assign to a varioable more some mysterious reason */
 
   --site_padding: 0;  /* "_" isnt really used in my naming scheme so I use it to show a css attribute relationship */
   --site_max-width: calc(--env_breakpoint * 2);
