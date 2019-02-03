@@ -1,7 +1,7 @@
 - name:
     - dice
     - die
-  def: a thing you roll
+  def: "* a thing you roll"
 
 - name: GitHub
-  def: [a website](github.com)
+  def: "[a website](github.com)"
