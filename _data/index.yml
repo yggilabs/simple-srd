@@ -56,40 +56,52 @@
   scope: /docs/races
 
 - name: Attune
-  url: /docs/actions-and-ratings#actions
+  url: /docs/actions-and-ratings
+  anchor: actions
 
 - name: Command
-  url: /docs/actions-and-ratings#actions
+  url: /docs/actions-and-ratings
+  anchor: actions
 
 - name: Consort
-  url: /docs/actions-and-ratings#actions
+  url: /docs/actions-and-ratings
+  anchor: actions
 
 - name: Finesse
-  url: /docs/actions-and-ratings#actions
+  url: /docs/actions-and-ratings
+  anchor: actions
 
 - name: Hunt
-  url: /docs/actions-and-ratings#actions
+  url: /docs/actions-and-ratings
+  anchor: actions
 
 - name: Prowl
-  url: /docs/actions-and-ratings#actions
+  url: /docs/actions-and-ratings
+  anchor: actions
 
 - name: Skirmish
-  url: /docs/actions-and-ratings#actions
+  url: /docs/actions-and-ratings
+  anchor: actions
 
 - name: Study
-  url: /docs/actions-and-ratings#actions
+  url: /docs/actions-and-ratings
+  anchor: actions
 
 - name: Survey
-  url: /docs/actions-and-ratings#actions
+  url: /docs/actions-and-ratings
+  anchor: actions
 
 - name: Sway
-  url: /docs/actions-and-ratings#actions
+  url: /docs/actions-and-ratings
+  anchor: actions
 
 - name: Tinker
-  url: /docs/actions-and-ratings#actions
+  url: /docs/actions-and-ratings
+  anchor: actions
 
 - name: Wreck
-  url: /docs/actions-and-ratings#actions
+  url: /docs/actions-and-ratings
+  anchor: actions
 
 - name: Strength
   scope: /docs/abilities/strength
