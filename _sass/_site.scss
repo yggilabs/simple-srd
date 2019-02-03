@@ -15,15 +15,20 @@ body, .site, .site * {
   color: var(--color__highlight);
 }
 
-.site strong, .site strong > a {
+.site .keyword, .site .keyword:hover {
+  text-decoration: underline wavy var(--color__8, --color__foreground);
+  color: var(--color__foreground);
+}
+
+.site strong, .site strong > .keyword {
   color: var(--color__5, --color__lowlight);
 }
 
-.site em, .site em > a {
+.site em, .site em > .keyword {
   color: var(--color__6, --color__5, --color__lowlight);
 }
 
-.site strong > em, .site strong > em > a {
+.site strong > em, .site strong > em > .keyword {
   color: var(--color__7, --color__5, --color__lowlight);
 }
 
@@ -31,9 +36,7 @@ body, .site, .site * {
   border-color: var(--color__lowlight);
 }
 
-.site .keyword, .site .keyword:hover {
-  text-decoration: underline wavy var(--color__8, --color__foreground);
-}
+
 
 /* this makes the end of the underlines more consistent in chrome at least */
 .site .keyword::after {
