@@ -9,6 +9,10 @@ title: Glossary
   {% for name in names %}
   <dt><dfn{% if forloop.first %} id="{{ name | slugify }}"{% endif %}>{{ name }}</dfn></dt>
   {% endfor %}
-  <dd>{{ def }}</dd>
+  <dd>
+
+{{ def }}
+
+  </dd>
 {% endfor %}
 </dl>
