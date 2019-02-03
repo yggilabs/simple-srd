@@ -1,0 +1,14 @@
+---
+title: Glossary
+---
+{% assign glossary = site.data.glossary %}
+<dl>
+{% for item in glossary %}
+  {% assign names = item.name %}
+  {% assign def = item.def %}
+  {% for name in names %}
+  <dt><dfn id="{{ name | slugify }}">{{ name }}</dfn></dt>
+  {% endfor %}
+  <dd>{{ def }}</dd>
+{% endfor %}
+</dl>
