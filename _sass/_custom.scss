@@ -1,11 +1,15 @@
 /* ignore me being preachy about css */
 :root {
-  --site_padding: 0;  /* "_" isnt really used in my naming scheme so I use it to show a css attribute relationship */  
+  --site_padding: 0;  /* "_" isnt really used in my naming scheme so I use it to show a css attribute relationship */
   --site__footer_border-top-width: 1px;
   --site__footer_border-top-style: solid;
   --site__footer_padding-top: 24px;
   --site__footer_margin: 0 128px 128px 64px;
   --site__footer_text-align: right;
+  --site__max_width: 2048px;
+  --site__min_width: 1024px;
+  --site__width: 80%;
+  --site__margin: 0 auto;
   /* emojis are 🔥 */
   --a--active__after_content: '!'; /*'🔥'; /* idk whats up with these variable names either */
   --a--active__after_color: var(--color__lowlight);
@@ -19,6 +23,10 @@
 @media (max-width: 1024px) {
   /* using media queries to modify paramterized classes is the cool way to write css ❄❄❄ */
   :root {
+    --site__max_width: initial;
+    --site__min_width: initial;
+    --site__width: initial;
+    --site__margin: initial;
     --site_padding: 0 8px;
     --site__nav_padding: 0;
     --site__main_margin: 0;
