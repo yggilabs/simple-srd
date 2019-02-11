@@ -121,4 +121,5 @@
 # using scope in apositive way
 - name: Draconic Ancestry table
   scope: /docs/races/dragonborn
-  url: /docs/races/dragonborn#draconic-ancestry
+  url: /docs/races/dragonborn
+  anchor: draconic-ancestry
