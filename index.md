@@ -23,6 +23,6 @@ Simple SRD is a project meant to quickly allow you to publish websites for [SRD]
 
 * ***Index***
 
-* ***Glossary**
+* ***Glossary***
 
 * ***Table of Contents***
