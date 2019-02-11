@@ -17,3 +17,12 @@ Simple SRD is a project meant to quickly allow you to publish websites for [SRD]
 * ***Customization*** It's your website, we give you the tools to make it how you want without making it complicated.
   * **Themes** Choose a theme or make your own.
   * **Configuration** Easy to use configuration. With sensible deafaults. No digging through settings.
+
+
+## Extras
+
+* ***Index***
+
+* ***Glossary**
+
+* ***Table of Contents***
