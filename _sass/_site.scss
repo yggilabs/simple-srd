@@ -16,7 +16,7 @@ body, .site, .site * {
 }
 
 .site .keyword, .site .keyword:hover {
-  text-decoration: underline wavy var(--color__8, --color__foreground);
+  text-decoration: underline dotted var(--color__8, --color__foreground);
   color: var(--color__foreground);
 }
 
