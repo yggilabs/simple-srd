@@ -6,6 +6,8 @@
   width: var(--site_width);
 }
 
+not(pre) {
+
 body, .site, .site * {
   background-color: var(--color__background);
   color: var(--color__foreground);
@@ -54,4 +56,6 @@ body, .site, .site * {
 .site .site__main {
   margin: var(--site__main_margin);
   padding: var(--site__main_padding);
+}
+  
 }
