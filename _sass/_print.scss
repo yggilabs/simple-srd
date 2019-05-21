@@ -1,0 +1,14 @@
+@page {
+  size: letter portrait;
+  padding: .5in;
+}
+
+@media print {
+  :not(.print) {
+    display:none;
+  }
+  
+  .print--columns {
+    columns: 2;
+  }
+}
