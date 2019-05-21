@@ -4,9 +4,11 @@
 }
 
 @media print {
-
+  .site__hide-on-print  {
+    display: none;
+  }
   
-  .print--columns {
+  .main__content {
     columns: 2;
   }
 }
