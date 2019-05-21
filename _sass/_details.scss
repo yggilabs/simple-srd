@@ -3,6 +3,10 @@ details > summary {
   outline: none; 
 }
 
+details > summary:first-of-type {
+    list-style-type: none;
+}
+
 details > summary::-webkit-details-marker {
   display: none;
 }
