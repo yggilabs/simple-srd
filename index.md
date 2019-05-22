@@ -1,7 +1,6 @@
 ---
 title: Simple SRD
 ---
-
 Simple SRD is a project meant to quickly allow you to publish websites for [SRD](https://en.wikipedia.org/wiki/System_Reference_Document)-like documents. Although originally created to document games, Simple SRD can help to create websites for any structured documents.
 
 ## Features
@@ -18,3 +17,12 @@ Simple SRD is a project meant to quickly allow you to publish websites for [SRD]
 * ***Customization*** It's your website, we give you the tools to make it how you want without making it complicated.
   * **Themes** Choose a theme or make your own.
   * **Configuration** Easy to use configuration. With sensible deafaults. No digging through settings.
+
+
+## Extras
+
+* ***Index***
+
+* ***Glossary***
+
+* ***Table of Contents***

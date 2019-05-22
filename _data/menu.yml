@@ -13,3 +13,11 @@
     - name: races/halfling
     - name: races/human
     - name: races/tiefling
+- name: abilities/index
+  items:
+    - name: abilities/strength
+    - name: abilities/dexterity
+    - name: abilities/constitution
+    - name: abilities/intelligence
+    - name: abilities/wisdom
+    - name: abilities/charisma

@@ -1,7 +1,6 @@
 ---
 title: Legal Stuff
 ---
-
 Some of the content on this site is from the Blades in the Dark SRD.
 
 > This work is based on [Blades in the Dark](http://www.bladesinthedark.com/), product of One Seven Design, developed and authored by John Harper, and licensed for our use under the [Creative Commons Attribution 3.0 Unported license](http://creativecommons.org/licenses/by/3.0/).

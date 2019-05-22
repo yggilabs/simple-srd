@@ -1,6 +1,5 @@
 ---
 title: The Core System
-category: the-basics.md
 ---
 ## Judgment calls
 

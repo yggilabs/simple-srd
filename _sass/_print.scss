@@ -1,0 +1,14 @@
+@media print {
+  .site__hide-on-print  {
+    display: none;
+  }
+  
+  .main__content {
+    columns: 2;
+  }
+}
+
+@page {
+  size: letter portrait;
+  padding: .5in;
+}
